@@ -63,20 +63,9 @@ html {
 	display: none;
 }
 
-// NAV
-// nav{
-// 	// z-index: 100;
-// }
-// nav
+//////////////////////////// NAV
 
-// nav li {
-// 	text-decoration: none;
-// 	// height: 100%;
-// 	// padding: 50px 30px;
-// 	color: #fff;
-// 	font-size: 3rem;
-// }
-nav {
+.nav {
 	// height: 40px;
 	background-color: rgba(0, 0, 0, 0.9);
 	border-bottom: 1px solid black;
@@ -111,7 +100,7 @@ nav {
 }
 .dropdown {
 	margin-top: 8px;
-	
+
 	position: absolute;
 	width: 300px;
 	text-align: center;
@@ -163,9 +152,63 @@ nav {
 	}
 }
 
-// nav a:hover {
-// 	background-color: rgba(74, 73, 73, 0.9);
-// }
+/////////////////////// NAV HAMBURGER
+
+.hamburger-nav {
+	padding-top: 30px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	flex-direction: column;
+	// justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	transform: translateX(100%);
+	background-color: #ddd;
+	transition: transform .3s;
+	z-index: 10;
+	
+	a {
+		display: flex;
+		text-align: center;
+		text-transform: uppercase;
+		// margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 10px 100px;
+		// margin: 20px 10px;
+		font-size: 10px;
+		text-decoration: none;
+		color: black;
+		transition: transform 1s;
+	}
+}
+.dropdown-container-one,
+.dropdown-container-two {
+	// display: flex;
+	display: none;
+	flex-direction: column;
+	text-align: center;
+	// margin: 20px;
+}
+
+	
+	a:hover {
+		color: blue;
+		background-color: grey;
+	}
+	
+	i {
+		padding-left: 10px;
+	}
+	.visible {
+		display: flex;
+	}
+	.nav--active{
+		transform: translateX(0%);
+		z-index: 10;
+}
 
 // MAIN //
 .mainPct {
@@ -177,6 +220,7 @@ nav {
 	background-size: cover;
 	background-position: center;
 	// background-attachment: fixed;
+	z-index: 0;
 }
 
 .section-heading {
@@ -462,10 +506,10 @@ section {
 //**********************************
 
 @media (min-width: 576px) {
-	nav{
+	.nav {
 		display: flex;
 	}
-	.menu{
+	.menu {
 		display: flex;
 	}
 
@@ -473,7 +517,10 @@ section {
 		height: 13rem;
 	}
 
-	.hgb {
+	.hbg {
+		display: none;
+	}
+	.hamburger-nav{
 		display: none;
 	}
 

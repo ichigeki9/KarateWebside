@@ -46,6 +46,7 @@
   display: block;
   top: 50%;
   margin-top: -2px;
+  z-index: 30;
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
@@ -57,11 +58,13 @@
   transition-property: transform;
   transition-duration: 0.15s;
   transition-timing-function: ease;
+  z-index: 30;
 }
 
 .hamburger-inner::before, .hamburger-inner::after {
   content: "";
   display: block;
+  z-index: 30;
 }
 
 .hamburger-inner::before {
@@ -75,6 +78,7 @@
 .hamburger--spin .hamburger-inner {
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  z-index: 30;
 }
 
 .hamburger--spin .hamburger-inner::before {

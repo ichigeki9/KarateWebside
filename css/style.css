@@ -63,7 +63,7 @@ html {
   display: none;
 }
 
-nav {
+.nav {
   background-color: rgba(0, 0, 0, 0.9);
   border-bottom: 1px solid black;
   display: none;
@@ -152,10 +152,63 @@ nav {
     transform: scale(1) translateY(0);
   }
 }
+.hamburger-nav {
+  padding-top: 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  transform: translateX(100%);
+  background-color: #ddd;
+  transition: transform 0.3s;
+  z-index: 10;
+}
+.hamburger-nav a {
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding: 10px 100px;
+  font-size: 10px;
+  text-decoration: none;
+  color: black;
+  transition: transform 1s;
+}
+
+.dropdown-container-one,
+.dropdown-container-two {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+}
+
+a:hover {
+  color: blue;
+  background-color: grey;
+}
+
+i {
+  padding-left: 10px;
+}
+
+.visible {
+  display: flex;
+}
+
+.nav--active {
+  transform: translateX(0%);
+  z-index: 10;
+}
+
 .mainPct {
   width: 100%;
   background-size: cover;
   background-position: center;
+  z-index: 0;
 }
 
 .section-heading {
@@ -411,7 +464,7 @@ section {
 }
 
 @media (min-width: 576px) {
-  nav {
+  .nav {
     display: flex;
   }
   .menu {
@@ -420,7 +473,10 @@ section {
   .header {
     height: 13rem;
   }
-  .hgb {
+  .hbg {
+    display: none;
+  }
+  .hamburger-nav {
     display: none;
   }
   .header-left {
