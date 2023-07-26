@@ -1,0 +1,50 @@
+p {
+  margin-bottom: 0.5em;
+}
+
+.fas {
+  margin-right: 20px;
+  color: blueviolet;
+}
+
+.accordion {
+  padding: 5px 0px;
+  margin: 0px auto;
+  width: 800px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.accordion-box {
+  margin: 20px;
+}
+
+.accordion-btn {
+  padding: 1em;
+  width: 100%;
+  font-size: 30px;
+  text-align: left;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.accordion-btn:hover, .accordion-btn:focus {
+  color: #fff;
+  outline: none;
+}
+
+.accordion-btn:hover .fas, .accordion-btn:focus {
+  color: #fff;
+  outline: none;
+}
+
+.accordion-info {
+  display: none;
+  padding: 1em 2em;
+}
+
+.active {
+  display: block;
+}/*# sourceMappingURL=karate.css.map */

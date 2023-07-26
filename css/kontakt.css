@@ -30,6 +30,10 @@ iframe {
   text-transform: uppercase;
 }
 
+.section-heading {
+  margin-bottom: 1em;
+}
+
 @media (min-width: 576px) {
   .contact-text {
     font-size: 2rem;

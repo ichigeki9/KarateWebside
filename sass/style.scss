@@ -49,6 +49,7 @@ html {
 
 .header-right {
 	margin-right: 2rem;
+	z-index: 11;
 }
 
 .btn-join {
@@ -92,10 +93,11 @@ html {
 	font-size: 1.2rem;
 	cursor: pointer;
 	transition: background-color 0.3;
-	// z-index: 1;
+	z-index: 8;
 	a{
 		text-decoration: none;
 		color: #fff;
+		
 	}
 }
 .menu-item:hover {
@@ -109,12 +111,13 @@ html {
 	text-align: center;
 	
 }
-.dropdownLink {
-	text-decoration:none;
-	color: #fff;
-	padding: 10px 20px;
-	background-color: none;
-}
+// .dropdownLink {
+// 	text-decoration:none;
+// 	color: #fff;
+// 	padding: 10px 30px;
+// 	background-color: none;
+	
+// }
 .dropdownLink:hover{
 	background-color: none;
 	color: #3776c9;
@@ -122,11 +125,15 @@ html {
 
 .dropdown li {
 	line-height: 3em;
-	// padding: 10px 20px;
 	display: none;
 	background-color: rgba(0, 0, 0, 0.9);
 	transition: color 0.3s;
 	opacity: 0;
+	text-decoration:none;
+	color: #fff;
+	padding: 10px 10px;
+	background-color: none;
+	width: 18em;
 }
 
 .dropdown li:hover {
@@ -170,22 +177,26 @@ html {
 /////////////////////// NAV HAMBURGER
 
 .hamburger-nav {
-	padding-top: 30px;
 	position: absolute;
-	top: 0px;
+	top: 0;
 	left: 0px;
+	right: 0;
+	bottom: 0;
+	padding-top: 50px;
 	display: flex;
-	flex-direction: column;
+	width: 100%;
 	// justify-content: center;
 	align-items: center;
-	height: 100vh;
-	width: 100%;
-	transform: translateX(100%);
+	flex-direction: column;
 	background-color: #ddd;
+	transform: translateX(100%);
 	transition: transform .3s;
 	z-index: 10;
-	
+	// height: 100vh;
+	// width: 100%;
 }
+
+
 .dropdown-container-one,
 .dropdown-container-two {
 	// display: flex;
@@ -198,14 +209,15 @@ html {
 	
 }
 .hamburger-nav a {
-	display: flex;
-	text-align: center;
+	display: block;
+	// display: flex;
+	// text-align: center;
 	text-transform: uppercase;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-bottom: 10px;
-	padding: 10px 10px;
+	padding: 10px 100px;
 	// margin: 20px 10px;
-	font-size: 10px;
+	font-size: 2rem;
 	text-decoration: none;
 	color: black;
 	transition: transform 1s;
@@ -223,18 +235,20 @@ html {
 	.visible {
 		display: flex;
 	}
-	.nav--active{
+	.nav-mobile--active{
 		transform: translateX(0%);
-		z-index: 10;
+		
 }
+// .hamburger-box{
+// 	z-index: 30;
+// }
+// .hamburger .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hbg {
+// z-index: 500;
+// }
+// .hamburger{
+// 	padding: 30px 30px;
 
-.hamburger .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hbg {
-z-index: 500;
-}
-.hamburger{
-	padding: 30px 30px;
-
-}
+// }
 
 
 // MAIN //
@@ -252,7 +266,7 @@ z-index: 500;
 
 .section-heading {
 	position: relative;
-	margin-bottom: 1.6em;
+	margin-bottom: 1.7em;
 	font-size: 2.5rem;
 	text-transform: uppercase;
 	text-align: center;
@@ -613,6 +627,7 @@ section {
 		padding: 10px 20px;
 		font-size: 1.5rem;
 		letter-spacing: 1.5px;
+		
 	}
 
 	//--------------------------------
