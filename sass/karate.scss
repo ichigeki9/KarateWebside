@@ -10,7 +10,7 @@ p {
 .accordion{
     padding: 5px 0px;
     margin: 0px auto;
-    width: 800px;
+    width: 80%;
     background-color: #fff;
     border-radius: 6px;
 }
@@ -19,6 +19,9 @@ p {
     margin: 20px;
 }
 .accordion-btn{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
     padding: 1em;
     width: 100%;
     font-size: 30px;
@@ -48,4 +51,38 @@ p {
 
 .active{
     display: block;
+}
+.orange{
+    background-color: #f7a01f;
+}
+.pagon{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    height: 100%;
+    width: 20px;
+    background-color: blue;
+}
+
+.history-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.history-text-box{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    text-align: justify;
+    // padding: 10px 10px;
+    // margin: 30px;
+
+img{
+    height: 120px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
 }
