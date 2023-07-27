@@ -1,1 +1,116 @@
-/*# sourceMappingURL=karate.css.map */
+p {
+  margin-bottom: 0.5em;
+}
+
+.fas {
+  margin-right: 20px;
+  color: blueviolet;
+}
+
+.accordion {
+  padding: 5px 0px;
+  margin: 0px auto;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.accordion-box {
+  margin: 20px;
+}
+
+.accordion-btn {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  width: 100%;
+  font-size: 30px;
+  text-align: left;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.accordion-btn:hover, .accordion-btn:focus {
+  color: #fff;
+  outline: none;
+}
+
+.accordion-btn:hover .fas, .accordion-btn:focus {
+  color: #fff;
+  outline: none;
+}
+
+.accordion-info {
+  display: none;
+  padding: 1em 2em;
+}
+
+.active {
+  display: block;
+}
+
+.orange {
+  background-color: #f7a01f;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.pagon {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  height: 100%;
+  width: 20px;
+}
+.pagon__blue {
+  background-color: blue;
+}
+.pagon__yellow {
+  background-color: yellow;
+}
+.pagon__green {
+  background-color: green;
+}
+.pagon__brown {
+  background-color: brown;
+}
+.pagon__black {
+  background-color: black;
+}
+
+.history-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.history-text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+}
+.history-text-box img {
+  height: 120px;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=karate.css.map *//*# sourceMappingURL=karate.css.map */
