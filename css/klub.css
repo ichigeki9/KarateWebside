@@ -1,0 +1,246 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+.cards .patryk {
+  background-image: url("/img/img2/IMG_3356.jpg");
+}
+.cards .iga {
+  background-image: url("/img/img2/iga.jpg");
+}
+.cards .magda {
+  background-image: url("/img/img2/magda.jpg");
+  background-position: top !important;
+}
+.cards .card {
+  position: relative;
+  margin: 10px;
+  height: 500px;
+  width: 90%;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+.cards .card button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  cursor: crosshair;
+  z-index: 10;
+}
+.cards .card .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 80px 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  -webkit-clip-path: circle(0% at 50% 90%);
+          clip-path: circle(0% at 50% 90%);
+  transition: -webkit-clip-path 0.8s;
+  transition: clip-path 0.8s;
+  transition: clip-path 0.8s, -webkit-clip-path 0.8s;
+}
+.cards .card h3 {
+  margin-bottom: 5px;
+  color: rgb(182, 179, 97);
+  font-size: 3rem;
+}
+.cards .card h4 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: rgb(141, 138, 138);
+}
+.cards .card p {
+  font-size: 2rem;
+}
+.cards .card button:hover ~ .text {
+  -webkit-clip-path: circle(120% at 50% 90%);
+          clip-path: circle(120% at 50% 90%);
+}
+
+@media (min-width: 576px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards .card {
+    margin: 20px;
+    height: 500px;
+    width: 70%;
+  }
+  .cards .card button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    cursor: crosshair;
+    z-index: 10;
+  }
+  .cards .card .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 80px 30px;
+  }
+  .cards .card .text h3 {
+    margin-bottom: 5px;
+    color: rgb(182, 179, 97);
+    font-size: 3.3rem;
+  }
+  .cards .card .text h4 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: rgb(141, 138, 138);
+  }
+  .cards .card .text p {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    margin: 20px;
+    height: 500px;
+    width: 44%;
+  }
+  .cards .card button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    cursor: crosshair;
+    z-index: 10;
+  }
+  .cards .card .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 80px 30px;
+  }
+  .cards .card .text h3 {
+    margin-bottom: 5px;
+    color: rgb(182, 179, 97);
+    font-size: 3.2rem;
+  }
+  .cards .card .text h4 {
+    margin-bottom: 30px;
+    font-size: 2.3rem;
+    color: rgb(141, 138, 138);
+  }
+  .cards .card .text p {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    margin: 20px;
+    height: 500px;
+    width: 45%;
+  }
+  .cards .card button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    cursor: crosshair;
+    z-index: 10;
+  }
+  .cards .card .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 80px 30px;
+  }
+  .cards .card .text h3 {
+    margin-bottom: 5px;
+    color: rgb(182, 179, 97);
+    font-size: 3.8rem;
+  }
+  .cards .card .text h4 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    color: rgb(141, 138, 138);
+  }
+  .cards .card .text p {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    margin: 20px;
+    height: 600px;
+    width: 29%;
+  }
+}
+@media (min-width: 1400px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    margin: 20px;
+    height: 600px;
+    width: 30%;
+  }
+}/*# sourceMappingURL=klub.css.map */

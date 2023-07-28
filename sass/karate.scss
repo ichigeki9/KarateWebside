@@ -1,6 +1,3 @@
-p {
-	margin-bottom: 0.5em;
-}
 
 .fas {
 	margin-right: 20px;
@@ -10,7 +7,7 @@ p {
 .accordion{
     padding: 5px 0px;
     margin: 0px auto;
-    width: 80%;
+    width: 85%;
     background-color: #fff;
     border-radius: 6px;
 }
@@ -51,12 +48,12 @@ p {
 
 .active{
     display: block;
-}
+    }
 .orange{
     background-color: #f7a01f;
 }
 .blue{
-background-color: blue;
+    background-color: blue;
 }
 .yellow{
     background-color: yellow;
@@ -65,7 +62,7 @@ background-color: blue;
     background-color: green;
 }
 .brown{
-    background-color: brown;
+    background-color: #964B00;
 }
 
 .pagon{
@@ -85,7 +82,7 @@ background-color: blue;
         background-color: green;
     }
     &__brown{
-        background-color: brown;
+        background-color: #964B00;
     }
     &__black{
         background-color: black;
@@ -97,6 +94,12 @@ background-color: blue;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    p {
+        margin-bottom: 0.5em;
+        text-align: justify;
+        font-size: 1.2rem;
+    }
 }
 .history-text-box{
     display: flex;
@@ -106,11 +109,68 @@ background-color: blue;
     // padding: 10px 10px;
     // margin: 30px;
 
-img{
-    height: 120px;
-    margin-top: 20px;
-    margin-left: 25px;
-    margin-bottom: 20px;
+    
+    img{
+        height: 150px;
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+    
 }
+
+@media (min-width: 576px) {
+    .history-text-container{
+        p{
+            font-size: 1.5rem;
+        }
+        img{
+            height: 220px;
+            margin-top: 20px;
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+    }
+    .history{
+        padding:6em 4em ;
+    }
+}
+
+@media (min-width: 768px) {
+    .history-text-container{
+        p{
+            font-size: 2rem;
+        }
+        img{
+            height: 300px;
+            margin-top: 20px;
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .history-text-container{
+        p{
+            font-size: 2.3rem;
+        }
+        img{
+            height: 320px;
+            margin-top: 20px;
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+    }
+    .history{
+        padding:6em 6em ;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 1400px) {
 
 }

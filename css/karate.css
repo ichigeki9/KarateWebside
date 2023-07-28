@@ -1,7 +1,3 @@
-p {
-  margin-bottom: 0.5em;
-}
-
 .fas {
   margin-right: 20px;
   color: blueviolet;
@@ -10,7 +6,7 @@ p {
 .accordion {
   padding: 5px 0px;
   margin: 0px auto;
-  width: 80%;
+  width: 85%;
   background-color: #fff;
   border-radius: 6px;
 }
@@ -69,7 +65,7 @@ p {
 }
 
 .brown {
-  background-color: brown;
+  background-color: #964B00;
 }
 
 .pagon {
@@ -89,7 +85,7 @@ p {
   background-color: green;
 }
 .pagon__brown {
-  background-color: brown;
+  background-color: #964B00;
 }
 .pagon__black {
   background-color: black;
@@ -101,6 +97,11 @@ p {
   align-items: center;
   flex-direction: column;
 }
+.history-text-container p {
+  margin-bottom: 0.5em;
+  text-align: justify;
+  font-size: 1.2rem;
+}
 
 .history-text-box {
   display: flex;
@@ -109,8 +110,48 @@ p {
   text-align: justify;
 }
 .history-text-box img {
-  height: 120px;
+  height: 150px;
   margin-top: 20px;
   margin-left: 25px;
   margin-bottom: 20px;
-}/*# sourceMappingURL=karate.css.map *//*# sourceMappingURL=karate.css.map */
+}
+
+@media (min-width: 576px) {
+  .history-text-container p {
+    font-size: 1.5rem;
+  }
+  .history-text-container img {
+    height: 220px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+  .history {
+    padding: 6em 4em;
+  }
+}
+@media (min-width: 768px) {
+  .history-text-container p {
+    font-size: 2rem;
+  }
+  .history-text-container img {
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .history-text-container p {
+    font-size: 2.3rem;
+  }
+  .history-text-container img {
+    height: 320px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+  .history {
+    padding: 6em 6em;
+  }
+}/*# sourceMappingURL=karate.css.map */
