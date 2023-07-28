@@ -3,13 +3,13 @@
   flex-direction: column;
 }
 .cards .patryk {
-  background-image: url("/img/img2/IMG_3356.jpg");
+  background-image: url("./img/img2/IMG_3356.jpg");
 }
 .cards .iga {
-  background-image: url("/img/img2/iga.jpg");
+  background-image: url("./img/img2/iga.jpg");
 }
 .cards .magda {
-  background-image: url("/img/img2/magda.jpg");
+  background-image: url("./img/img2/magda.jpg");
   background-position: top !important;
 }
 .cards .card {
