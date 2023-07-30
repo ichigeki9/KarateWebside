@@ -223,10 +223,80 @@ i {
 }
 
 .mainPct {
+  filter: blur(3px);
+  background-attachment: fixed;
   width: 100%;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   z-index: 0;
+}
+
+.headers {
+  position: relative;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hbg {
+  z-index: 100;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.header-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-box .butt {
+  margin-top: 50px;
+  padding: 15px 25px;
+  font-size: 2rem;
+  font-family: "Agency FB", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: none;
+  border-radius: 6px;
+  color: #fff;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.header-box .butt:hover {
+  color: black;
+  background-color: #fff;
+}
+.header-box img {
+  width: 200px;
+  height: 200px;
+}
+.header-box h1 {
+  font-family: "Agency FB", sans-serif;
+  letter-spacing: 5px;
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+}
+.header-box h1 span {
+  letter-spacing: 8px;
 }
 
 .section-heading {
@@ -242,192 +312,103 @@ i {
   padding: 4em 2em;
 }
 
-section {
-  background: #f4f4f4;
-  padding: 50px 0;
-}
-
-.container {
-  max-width: 1044px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.carousel {
-  display: block;
-  text-align: left;
+.carousel-wrapper {
   position: relative;
-  margin-bottom: 22px;
+  /* Let's set our jump link targets display: none; so that we're not
+  making the browser jump to the top of the carousel whenever a user
+  clicks on one of our arrow links. This attribute selector will target
+  any element whose id starts with 'target-item'. */
+  /* So, up above we made all our carousel items transparent, which means
+  that on page-load, we'd have a big empty box where our carousel should be.
+  Let's set our first item's opacity to 1 so that it displays instead. Also,
+  we're setting its z-index to 2, so that it's positioned on top of the
+  other carousel items. */
+  /* But we don't want the first item to ALAWYS be opacity: 1; otherwise
+  it would peek through when cycling between items two and above. */
+  /* ...but if #target-item-1 is targeted, well we do want the first item
+  to show up, so we're selecting it with the ~ sibling selector and
+  setting its opacity to 1 again :-) */
+  /* If any other target-item-# is targeted, let's select it using the sibling
+  selector, make it fade in, and place it on top of the pile using z-index: 3.
+  Here's where you'd add more target items if your carousel has more than three
+  items. It might be worth adding like 10 items right off the bat. */
 }
-.carousel > input {
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-}
-.carousel > input:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -500%;
-}
-.carousel > input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -400%;
-}
-.carousel > input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -300%;
-}
-.carousel > input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -200%;
-}
-.carousel > input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -100%;
-}
-.carousel > input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: 0%;
-}
-.carousel > input:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-}
-.carousel > input:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-}
-.carousel > input:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-}
-.carousel > input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-}
-.carousel > input:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-}
-.carousel > input:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
-}
-
-.carousel__slides {
-  position: relative;
-  z-index: 1;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-  display: flex;
-}
-
-.carousel__slide {
-  position: relative;
-  display: block;
-  flex: 1 0 100%;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: all 300ms ease-out;
-  box-sizing: border-box;
-  white-space: normal;
-}
-.carousel__slide figure {
-  display: flex;
-  margin: 0;
-}
-.carousel__slide div {
-  position: relative;
-  width: 100%;
-}
-.carousel__slide div:before {
-  display: block;
-  content: "";
-  width: 100%;
-  padding-top: 66.6666666667%;
-}
-.carousel__slide div > img {
+.carousel-wrapper .carousel-item {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #aaa;
+  /* Did you notice the 50px left, right padding up above? It's so
+  we can position our arrow links! Each one will be 50px wide. Also,
+  I'm using empty links with a background image so that the links
+  look like arrows. Make sure you swap out that URL with an actual
+  URL so that your arrow links aren't just transparent rectangles. */
+  /* I really like how these carousel items look on a dark image
+  background, so if a .carousel-item div has the class 'light',
+  we'll make its text color white, and use a white arrow instad of
+  a dark gray one. Again, make sure this arrow image exists somewhere */
+  /* Let's use using some media queries to resize the arrows
+  on smaller devices.*/
 }
-.carousel__slide img {
-  display: block;
-  flex: 1 1 auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.carousel__slide figcaption {
-  align-self: flex-end;
-  padding: 20px 20px 0 20px;
-  flex: 0 0 auto;
-  width: 25%;
-  min-width: 150px;
-}
-.carousel__slide .credit {
-  margin-top: 1rem;
-  color: rgba(0, 0, 0, 0.5);
-  display: block;
-}
-.carousel__slide.scrollable {
-  overflow-y: scroll;
-}
-
-.carousel__thumbnails {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  margin: 0 -10px;
-}
-.carousel__slides + .carousel__thumbnails {
-  margin-top: 20px;
-}
-.carousel__thumbnails li {
-  flex: 1 1 auto;
-  max-width: calc(16.6666666667% - 20px);
-  margin: 0 10px;
-  transition: all 300ms ease-in-out;
-}
-.carousel__thumbnails label {
-  display: block;
-  position: relative;
-}
-.carousel__thumbnails label:before {
-  display: block;
-  content: "";
-  width: 100%;
-  padding-top: 100%;
-}
-.carousel__thumbnails label > img {
+.carousel-wrapper .carousel-item .arrow {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-.carousel__thumbnails label:hover, .carousel__thumbnails label:focus {
-  cursor: pointer;
-}
-.carousel__thumbnails label:hover img, .carousel__thumbnails label:focus img {
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
-  transition: all 300ms ease-in-out;
-}
-.carousel__thumbnails img {
   display: block;
-  width: 100%;
+  width: 50px;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: url("http://haloxp.com/codepen/carousel-arrow-dark.png") 50% 50%/20px no-repeat;
+  /* Let's put our arrow to go back on the left. */
+  /* And our arrow to go forward on the right. Since I'm using
+  the same arrow image for both my arrows, I'm rotating this one by
+  180 degrees so that it points in the right direction */
+}
+.carousel-wrapper .carousel-item .arrow.arrow-prev {
+  left: 0;
+}
+.carousel-wrapper .carousel-item .arrow.arrow-next {
+  right: 0;
+  transform: rotate(180deg);
+}
+.carousel-wrapper .carousel-item.light {
+  color: white;
+}
+.carousel-wrapper .carousel-item.light .arrow {
+  background: url("http://haloxp.com/codepen/carousel-arrow-light.png") 50% 50%/20px no-repeat;
+}
+@media (max-width: 480px) {
+  .carousel-wrapper .carousel-item .arrow, .carousel-wrapper .carousel-item.light .arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
+}
+.carousel-wrapper [id^=target-item] {
+  display: none;
+}
+.carousel-wrapper .item-1 {
+  z-index: 2;
+  opacity: 1;
+}
+.carousel-wrapper *:target ~ .item-1 {
+  opacity: 0;
+}
+.carousel-wrapper #target-item-1:target ~ .item-1 {
+  opacity: 1;
+}
+.carousel-wrapper #target-item-2:target ~ .item-2, .carousel-wrapper #target-item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
 }
 
 .about-us__box {
   display: flex;
   flex-direction: column;
-  margin: 2em 0;
+  margin: 2em 2em;
 }
 .about-us__img {
   width: 100%;
@@ -482,6 +463,23 @@ section {
 }
 
 @media (min-width: 576px) {
+  .header-box img {
+    width: 250px;
+    height: 250px;
+  }
+  .header-box h1 {
+    font-family: "Agency FB", sans-serif;
+    letter-spacing: 5px;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: white;
+    font-weight: bold;
+  }
+  .header-box h1 span {
+    letter-spacing: 10px;
+  }
   .nav {
     display: flex;
   }
@@ -626,6 +624,12 @@ section {
   }
 }
 @media (min-width: 992px) {
+  .butt {
+    margin-top: 50px;
+    padding: 15px 25px;
+    font-size: 10rem;
+    letter-spacing: 2px;
+  }
   .header {
     height: 18rem;
   }
