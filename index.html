@@ -9,64 +9,31 @@
     <script src="https://kit.fontawesome.com/c6f29183f5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Victor+Mono:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Victor+Mono:ital@1&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/agency-fb?styles=17318" rel="stylesheet">
-                
-                
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <!-- <header class="header">
 
-
-        <div class="header-left">
-            <a href="https://www.facebook.com/karate.elk/"> <i class="fa-brands fa-square-facebook fbIcon"></i></a>
-
-            <i class="fa-solid fa-mobile-screen phoneIcon"></i>
-            <p>519 771 607</p>
-
-        </div>
-        <div class="header-middle">
-            <img src="./img/logo.png" alt="logo">
-        </div>
-        <div class="header-right">
-            <div class="hbg">
-                <button class="hamburger hamburger--spin" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </div>
-            <button class="btn-join">Dołącz do nas</button>
-
-        </div>
-    </header> -->
-
-
-    <!-- <ul class="menu">
-        <div class="nav-right">
-            <li> <a href="#">O nas</a></li>
-            <li> <a href="#">Karate</a></li>
-            <li> <a href="#">Klub</a></li>
-        </div>
-        <div class="nav-left">
-            <li>  <a href="#">Aktualności</a></li>
-            <li> <a href="#">Oferta</a></li>
-                    <li> <a href="#">Kontakt</a></li>
-                </div>
-            </ul> -->
-
-    <nav>
-        <div class="nav">
-            <ul class="menu">
-                <li class="menu-item">
-                    <a href="./index.html">aktualności</a>
-                </li>
-                <li class="menu-item">
-                    <a href="">o nas</a>
+                <nav>
+                    <div class="desktop-nav">
+                        <div class="brand">
+                            
+                            <a href="#!"><img class="navLogo" src="/img/logo.png" alt="logo">Ełcki Klub Karate Shinkyokushin</a>
+                        </div>
+                        <!-- <p class="brand"><a href="#"> <img class="navLogo" src="/img/logo.png" alt="logo">Ełcki Klub karate</a></p> -->
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="./index.html">Aktualności</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="">O Nas</a>
                 </li>
                 <li class="menu-item">
                     <a href="./karate.html">Karate</a>
@@ -77,7 +44,7 @@
                     </ul>
                 </li>
                 <li class="menu-item">
-                    Klub
+                    <a href="./karate.html">Klub</a>
                     <ul class="dropdown">
                         <li><a class="dropdownLink" href="./klub.html">Grupy Treningowe</a></li>
                         <li><a class="dropdownLink" href="./klub.html">Historia Klubu</a></li>
@@ -88,12 +55,11 @@
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <a href="./kontakt.html">kontakt</a>
+                    <a href="./kontakt.html">Kontakt</a>
                 </li>
                 <!-- <li class="menu-item">
                     Oferta
                 </li> -->
-                
             </ul>
         </div>
 
@@ -121,197 +87,31 @@
 
     </nav>
 
-
     <main>
-        <header class="headers">
-           
-        <img src="./img/zdj sala nowe.jpg" alt="klub" class='mainPct'>
-        <div class="shadow"></div>
-        <div class="hbg">
-            <button class="hamburger hamburger--spin" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-        </div>
-        <div class="header-box">
-            <img src="./img/logo.png" alt="logo">
-            <h1>Ełcki klub karate <br> <span>shinkyokushin</span></h1>
-            <button class="butt"><a href="#"></a>POZNAJ NAS</button>
-        </div>
+        
+            <div class="hbg">
+                <button class="hamburger hamburger--spin" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        <header class="headers animate__animated animate__fadeInLeft ">
+            <img src="./img/zdj sala nowe.jpg" alt="klub" class='mainPct'>
+            <div class="shadow"></div>
+            <div class="header-box">
+                <img src="./img/logo.png" alt="logo">
+                <h1>Ełcki klub karate <br> <span>shinkyokushin</span></h1>
+                <button class="butt"><a href="#"></a>POZNAJ NAS</button>
+            </div>
         </header>
 
 
 
 
 
-        <section class="news section-padding">
-            <div class="wrapper">
-                <h2 class="title section-heading">Aktualności</h2>
 
-                
-
-<!--Here's our main wrapper.
-Since our carousel items get their size from their parent,
-we have to specify its height.-->
-<div class="carousel-wrapper" style="height: 400px;">
-    <!--The carousel uses regular links to cycle through each item.
-    The links actually target these display: none; spans so our page doesn't
-    jump like it normally would when using jump links.-->
-    <span id="target-item-1"></span>
-    <span id="target-item-2"></span>
-    <span id="target-item-3"></span>
-    <!--Here are our carousel items.
-    Each has a 'carousel-item' class, which we use for shared styling
-    and an item-# class, which we use to control its opacity
-    depending on which target-item-# is currently targeted-->
-    <div class="carousel-item item-1" style="background-color: khaki;">
-      <!--We can add any content in here, just make sure that
-      your .carousel-wrapper is big enough to hold all the content.-->
-      <h2>Item 1</h2>
-      <p>Content goes here.</p>
-      <!--Here are the links that control the carousel! Make sure
-      the href of each one is pointing to the right target-item-#
-      so that the carousel cycles in sequence.-->
-      <a class="arrow arrow-prev" href="#target-item-3"></a>
-      <a class="arrow arrow-next" href="#target-item-2"></a>
-    </div>
-    <!--And here are a couple more carousel items so that
-    we have some content to scroll to. Notice the 'light' class?
-    Royal blue is a pretty dark background color, so we'll add a CSS
-    rule to make the text white if a carousel item has this class-->
-    <div class="carousel-item item-2 light" style="background-color: royalblue;">
-      <h2>Item 2</h2>
-      <p>Content goes here.</p>
-      <a class="arrow arrow-prev" href="#target-item-1"></a>
-      <a class="arrow arrow-next" href="#target-item-3"></a>
-    </div>
-    <div class="carousel-item item-3" style="background-color: aliceblue;">
-      <h2>Item 3</h2>
-      <p>Content goes here.</p>
-      <a class="arrow arrow-prev" href="#target-item-2"></a>
-      <a class="arrow arrow-next" href="#target-item-1"></a>
-    </div>
-  </div>
-  
-  
-
-            </div>
-        </section>
-
-        <!-- ///////////////////////////////////////////STARA KARUZELA -->
-        <!-- <section class="news section-padding">
-            <h2 class="title section-heading">Aktualności</h2>
-            <div class="container">
-                <div class="carousel">
-                    <input type="radio" name="slides" checked="checked" id="slide-1">
-                    <input type="radio" name="slides" id="slide-2">
-                    <input type="radio" name="slides" id="slide-3">
-                    <input type="radio" name="slides" id="slide-4">
-                    <input type="radio" name="slides" id="slide-5">
-                    <input type="radio" name="slides" id="slide-6">
-                    <ul class="carousel__slides">
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="https://picsum.photos/id/1041/800/450" alt="">
-                                </div>
-                                <figcaption>
-                                    W Skarżysku Kamiennej odbył się turniej Karate Shinkyokushinkai z udziałem 350
-                                    zawodników z 36 klubów oraz zawodników z Austrii, Rosji i Ukrainy. Dwa pierwsze
-                                    miejsca zdobyli zawodnicy Ełckiego Klubu Karate: Dawid Lewkowicz I miejsce młodzików
-                                    do 45 kg i Wocjech Górski I miejsce seniorów powyżej 85 kg. W zawodach uczestniczyli
-                                    Oliwia Lewkowicz i Dariusz Michałowski, oboje wygrali swoje pierwsze walki. Wyjazd
-                                    dofinansowany został z budżetu miasta Ełku. Gratulacje !
-                                    <span class="credit">
-                                        Skarżysko Kamienna Cup 2019 paź 19, 2019
-                                    </span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="https://picsum.photos/id/1043/800/450" alt="">
-                                </div>
-                                <figcaption>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span class="credit">Photo: Christian Joudrey</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="https://picsum.photos/id/1044/800/450" alt="">
-                                </div>
-                                <figcaption>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span class="credit">Photo: Steve Carter</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="https://picsum.photos/id/1045/800/450" alt="">
-                                </div>
-                                <figcaption>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span class="credit">Photo: Aleksandra Boguslawska</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="https://picsum.photos/id/1049/800/450" alt="">
-                                </div>
-                                <figcaption>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span class="credit">Photo: Rosan Harmens</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="https://picsum.photos/id/1052/800/450" alt="">
-                                </div>
-                                <figcaption>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span class="credit">Photo: Annie Spratt</span>
-                                </figcaption>
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul class="carousel__thumbnails">
-                        <li>
-                            <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section> -->
-
-
-
-        <section class="about-us section-padding">
+        <section class="about-us section-padding animate__animated animate__fadeInLeft grey">
             <div class="wrapper">
                 <h2 class="title section-heading">O nas</h2>
 
@@ -321,12 +121,7 @@ we have to specify its height.-->
                         <img src="./img/Team.jpg" alt="Trenerzy" class="about-us__img">
                     </div>
                     <div class="about-us__box-text">
-                        <p class="about-us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-                            voluptatem cupiditate amet doloribus corrupti iusto perspiciatis eum temporibus reiciendis
-                            esse, aperiam nam nostrum error voluptatibus. Obcaecati tempora numquam incidunt ad animi
-                            culpa molestias quae nulla ratione inventore! Provident doloremque reiciendis numquam dicta,
-                            laudantium autem similique atque maiores a laborum aperiam vitae odit fuga placeat illo
-                            ipsum. <span><a href="">Czytaj dalej.</a></span> </p>
+                        <p class="about-us__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio neque, dolorem doloremque autem eligendi distinctio tempore nesciunt voluptate quam accusamus nisi rerum, a architecto veritatis ipsam ducimus. Sapiente minus eius placeat exercitationem velit quod similique rerum hic. Cupiditate adipisci soluta, nobis suscipit autem aliquid sed vitae eaque dignissimos. Labore, porro!   <span><a href="">Czytaj dalej.</a></span> </p>
                     </div>
 
 
@@ -334,7 +129,26 @@ we have to specify its height.-->
             </div>
         </section>
 
-        <section class="train-us section-padding">
+        <!-- <section class="about-us section-padding animate__animated animate__fadeInLeft">
+            
+                <h2 class="title section-heading">O nas</h2>
+                
+                <div class="about-us__box">
+
+                    <div class="about-us__box-img">
+                        <img src="./img/Team.jpg" alt="Trenerzy" class="about-us__img">
+                    </div>
+                    <div class="about-us__box-text">
+                        <p class="about-us__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, voluptatem eveniet, expedita doloribus reiciendis aliquam deleniti consequatur dolorum saepe aperiam consectetur debitis quas corporis sapiente dignissimos ratione iste, culpa accusantium.   <span><a href="">Czytaj dalej.</a></span> </p>
+                    </div>
+
+
+                </div>
+
+        </section> -->
+
+
+        <section class="train-us section-padding grey-one">
             <div class="wrapper">
                 <h2 class="title section-heading">Trenuj z nami</h2>
 
@@ -346,9 +160,7 @@ we have to specify its height.-->
 
                         <div class="train-us__box-text">
                             <h3 class="train-us__title">Nowoczesny Klub</h3>
-                            <p class="train-us__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                                deserunt iure assumenda vel quasi totam, fugiat modi explicabo obcaecati facere minima
-                                eum velit unde iusto expedita reiciendis ducimus amet aliquid!</p>
+                            <p class="train-us__text">Nowoczesna klimatyzowana sala treningowa umożliwia zróżnicowane treningi dopasowane do indywidualnych celów. Wysokiej jakości sprzęt sprzyja wygodzie i bezpieczeństwu podczas ćwiczeń, a estetyczny design tworzy motywujące otoczenie.  </p>
                         </div>.
                     </div>
 
@@ -357,9 +169,7 @@ we have to specify its height.-->
 
                         <div class="train-us__box-text">
                             <h3 class="train-us__title">Wykwalifikowana Kadra</h3>
-                            <p class="train-us__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                                deserunt iure assumenda vel quasi totam, fugiat modi explicabo obcaecati facere minima
-                                eum velit unde iusto expedita reiciendis ducimus amet aliquid!</p>
+                            <p class="train-us__text">Wykwalifikowana kadra to niezwykle istotny element każdej dziedziny, zapewniający wysoki poziom profesjonalizmu i kompetencji. Wykwalifikowana kadra jest w stanie dostosować plany treningowe do indywidualnych potrzeb i umiejętności każdej osoby, co przekłada się na lepsze rezultaty. Ponadto, profesjonalni instruktorzy potrafią motywować i inspirować swoich podopiecznych, tworząc pozytywną atmosferę sprzyjającą regularnym treningom.</p>
                         </div>.
                         <div class="train-us__box-img">
                             <img src="./img/kadra.jpg" alt="Klub" class="train-us__img">
@@ -369,7 +179,7 @@ we have to specify its height.-->
                     <div class="train-us__box">
 
                         <div class="train-us__box-img">
-                            <img src="./img/kadra.jpg" alt="Klub" class="train-us__img">
+                            <img src="./img/wyjazdy 1.jpg" alt="Klub" class="train-us__img">
                         </div>
                         <div class="train-us__box-text">
                             <h3 class="train-us__title">Wyjazdy</h3>
@@ -383,17 +193,16 @@ we have to specify its height.-->
 
                         <div class="train-us__box-text">
                             <h3 class="train-us__title">Pasja</h3>
-                            <p class="train-us__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                                deserunt iure assumenda vel quasi totam, fugiat modi explicabo obcaecati facere minima
-                                eum velit unde iusto expedita reiciendis ducimus amet aliquid!</p>
+                            <p class="train-us__text">Pasja do karate to głębokie zaangażowanie, które prowadzi do ciągłego doskonalenia swoich umiejętności i poznawania filozofii tej sztuki walki. Pasjonaci karate wyznają zasady szacunku, samoograniczenia i ducha sportowej rywalizacji, które wpływają na ich codzienne życie. Ta pasja może przynieść głęboką satysfakcję, rozwijając nie tylko umiejętności fizyczne, ale także charakter, cierpliwość i wytrwałość.</p>
                         </div>.
                         <div class="train-us__box-img">
-                            <img src="./img/kadra.jpg" alt="Klub" class="train-us__img">
+                            <img src="./img/pasja.jpg" alt="Klub" class="train-us__img">
                         </div>
                     </div>
                 </div>
 
             </div>
+            </section>
     </main>
 
     <script src="./script.js"></script>

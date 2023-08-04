@@ -64,72 +64,80 @@ html {
   display: none;
 }
 
-.nav {
-  position: absolute;
-  top: 0;
-  left: 0;
+.desktop-nav {
+  position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 70px;
+  line-height: 70px;
+  padding: 0 100px;
+  z-index: 5;
+  display: none;
+}
+
+.brand {
+  display: inline-block;
+}
+.brand a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
+}
+.brand .navLogo {
+  float: left;
+  margin-top: 10px;
+  width: 70px;
+  height: 50px;
+  padding-right: 20px;
 }
 
 .menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  display: none;
+  float: right;
 }
 
-.menu-item {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  padding: 10px 20px;
-  width: 100%;
-  color: #fff;
-  font-size: 1.2rem;
+.desktop-nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
   cursor: pointer;
-  transition: background-color 0.3;
-  z-index: 8;
 }
-.menu-item a {
+
+.desktop-nav ul li a {
   text-decoration: none;
   color: #fff;
+  font-size: 20px;
+  padding: 0 15px;
+  display: block;
 }
 
-.menu-item:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+.desktop-nav ul li a:hover {
+  background-color: #a7a1a1;
 }
 
-.dropdown {
-  margin-top: 8px;
+.desktop-nav ul li ul {
   position: absolute;
-  width: 300px;
-  text-align: center;
+  top: 70px;
 }
 
-.dropdownLink:hover {
-  background-color: none;
-  color: #3776c9;
-}
-
-.dropdown li {
-  line-height: 3em;
+.desktop-nav ul li ul li {
+  line-height: 1;
+  width: 190px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 6px;
+  z-index: 1;
   display: none;
-  background-color: rgba(0, 0, 0, 0.9);
-  transition: color 0.3s;
   opacity: 0;
-  text-decoration: none;
-  color: #fff;
-  padding: 20px 10px;
-  background-color: none;
-  width: 18em;
 }
 
-.dropdown li:hover {
-  color: royalblue;
+.desktop-nav ul li ul li a {
+  padding: 10px 16px;
+}
+
+.desktop-nav ul li ul li a:hover {
+  background-color: #868383;
 }
 
 .menu-item:hover .dropdown li {
@@ -185,7 +193,7 @@ html {
   background-color: #ddd;
   transform: translateX(100%);
   transition: transform 0.3s;
-  z-index: 10;
+  z-index: 30;
 }
 
 .dropdown-container-one,
@@ -237,6 +245,7 @@ i {
 
 .headers {
   position: relative;
+  z-index: 4;
 }
 
 .shadow {
@@ -298,12 +307,19 @@ i {
   font-size: 4rem;
   color: white;
   font-weight: bold;
-  text-shadow: 1px 1px 1px white, 2px 2px 1px black;
 }
 .header-box h1 span {
   padding: 5px 10px;
   letter-spacing: 8px;
   border-radius: 6px;
+}
+
+.grey {
+  background-color: #fdfdfd;
+}
+
+.grey-one {
+  background: #d8d7d7;
 }
 
 .section-heading {
@@ -415,14 +431,17 @@ i {
 .about-us__box {
   display: flex;
   flex-direction: column;
-  margin: 2em 2em;
+  margin: 2em 1.5em;
 }
 .about-us__img {
+  border-radius: 5px;
   width: 100%;
-  margin-bottom: 1em;
+  height: 100%;
 }
 .about-us__text {
-  font-size: 1.4em;
+  margin-top: 2em;
+  font-size: 1.5rem;
+  text-align: justify;
 }
 
 .train-us__boxes {
@@ -435,12 +454,19 @@ i {
 .train-us__box {
   display: flex;
   border-top: 1px solid black;
+  border-bottom: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  height: 15rem;
+  height: 15em;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .train-us__box-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 50%;
 }
@@ -457,6 +483,7 @@ i {
   flex-direction: column;
   height: 100%;
   width: 50%;
+  background-color: #eee;
 }
 
 .train-us__title {
@@ -467,6 +494,8 @@ i {
 
 .train-us__text {
   margin: 1em 2em 2em 2em;
+  font-size: 0.9rem;
+  text-align: justify;
 }
 
 @media (min-width: 576px) {
@@ -498,12 +527,6 @@ i {
   }
   .header {
     height: 13rem;
-  }
-  .hbg {
-    display: none;
-  }
-  .hamburger-nav {
-    display: none;
   }
   .header-left {
     margin-left: 0.5em;
@@ -538,24 +561,24 @@ i {
     font-size: 3rem;
   }
   .section-padding {
-    padding: 6em 2em;
+    padding: 6em 0em;
   }
   .about-us__box {
     flex-direction: row;
     justify-content: space-between;
   }
   .about-us__box-text {
+    margin-top: -1.5em;
     width: 45%;
+    height: 100%;
+    padding: 0em 1em;
+    font-size: 2rem;
   }
   .about-us__box-img {
-    width: 50%;
-  }
-  .about-us__img {
-    margin-bottom: 0;
+    width: 60%;
     min-height: 200px;
   }
   .menu-item {
-    padding: 10px 20px;
     font-size: 1.5rem;
     letter-spacing: 1.5px;
   }
@@ -576,6 +599,22 @@ i {
   }
 }
 @media (min-width: 768px) {
+  .desktop-nav {
+    display: block;
+    padding: 0 30px;
+  }
+  .brand a {
+    font-size: 1.3rem;
+  }
+  .desktop-nav ul li a {
+    font-size: 1.3rem;
+  }
+  .hbg {
+    display: none;
+  }
+  .hamburger-nav {
+    display: none;
+  }
   .header {
     height: 16rem;
   }
@@ -615,7 +654,8 @@ i {
     padding: 8em 2em;
   }
   .about-us__text {
-    font-size: 1.8em;
+    padding-left: 1em;
+    font-size: 0.9em;
     text-align: justify;
   }
   .menu-item {
@@ -634,6 +674,15 @@ i {
   }
 }
 @media (min-width: 992px) {
+  .desktop-nav {
+    padding: 0 90px;
+  }
+  .brand a {
+    font-size: 1.5rem;
+  }
+  .desktop-nav ul li a {
+    font-size: 1.7rem;
+  }
   .butt {
     margin-top: 50px;
     padding: 15px 25px;
@@ -703,11 +752,27 @@ i {
   }
 }
 @media (min-width: 1200px) {
+  .desktop-nav {
+    display: block;
+    padding: 0 120px;
+  }
+  .brand a {
+    font-size: 2rem;
+  }
+  .desktop-nav ul li a {
+    font-size: 2rem;
+  }
   .btn-join {
     display: flex;
   }
+  .about-us__img {
+    width: 100%;
+    height: 43em;
+    margin-bottom: 1em;
+  }
   .about-us__text {
     font-size: 2.5rem;
+    text-align: justify;
   }
   .train-us__title {
     font-size: 3.7rem;
@@ -726,18 +791,18 @@ i {
     display: flex;
   }
   .about-us__text {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
   .train-us__title {
     font-size: 4rem;
     margin: 1em 1em 0 1em;
   }
   .train-us__text {
-    font-size: 3rem;
+    font-size: 2.1rem;
     margin: 1em 2em 2em 2em;
   }
   .train-us__box {
-    height: 50em;
+    height: 40em;
   }
   .header-box {
     position: absolute;
