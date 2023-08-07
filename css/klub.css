@@ -1,3 +1,29 @@
+.navbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 70px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.navbox .navBarLogo {
+  height: 50px;
+  margin: 10px;
+}
+.navbox .navBarTitle {
+  display: inline-block;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-left: 10px;
+}
+
+.tittleMargin {
+  margin-top: 40px;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -123,6 +149,9 @@
   }
 }
 @media (min-width: 768px) {
+  .navbox {
+    display: none;
+  }
   .cards {
     display: flex;
     flex-direction: row;

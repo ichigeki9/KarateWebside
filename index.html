@@ -21,19 +21,47 @@
 
 <body>
 
-                <nav>
-                    <div class="desktop-nav">
-                        <div class="brand">
-                            
-                            <a href="#!"><img class="navLogo" src="/img/logo.png" alt="logo">Ełcki Klub Karate Shinkyokushin</a>
-                        </div>
-                        <!-- <p class="brand"><a href="#"> <img class="navLogo" src="/img/logo.png" alt="logo">Ełcki Klub karate</a></p> -->
-                        <ul class="menu">
-                            <li class="menu-item">
-                                <a href="./index.html">Aktualności</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="">O Nas</a>
+    <div class="hbg">
+        <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
+    
+    <nav>
+        <div class="hamburger-nav ">
+            <a href="./index.html">Aktualności</a>
+            <a href="#services">O nas</a>
+            <a class="dropBtn-one" href="#clients">Karate <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="dropdown-container-one">
+                <a href="./karate.html">Historia</a>
+                <a href="./karate.html">Pasy</a>
+                <a href="./karate.html">Wymagania Egzaminacyjne</a>
+            </div>
+            <a class='dropBtn-two' href="#contact">Klub <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="dropdown-container-two">
+                <a href="./klub.html">Grupy Treningowe</a>
+                <a href="./klub.html">Historia Klubu</a>
+                <a href="./klub.html">Instruktorzy</a>
+                <a href="./klub.html">Nasz Klub</a>
+                <a href="./klub.html">Regulamin i cennik</a>
+                <a href="./klub.html">Stopnie mistrzowskie</a>
+            </div>
+            <a href="#">Oferta</a>
+            <a href="./kontakt.html">Kontakt</a>
+        </div>
+        <div class="desktop-nav">
+            <div class="brand">
+                <a href="#!"><img class="navLogo" src="/img/logo.png" alt="logo">Ełcki Klub Karate Shinkyokushin</a>
+            </div>
+            <!-- <p class="brand"><a href="#"> <img class="navLogo" src="/img/logo.png" alt="logo">Ełcki Klub karate</a></p> -->
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="./index.html">Aktualności</a>
+                </li>
+                <li class="menu-item">
+                    <a href="">O Nas</a>
                 </li>
                 <li class="menu-item">
                     <a href="./karate.html">Karate</a>
@@ -63,43 +91,16 @@
             </ul>
         </div>
 
-        <div class="hamburger-nav ">
-            <a href="./index.html">Aktualności</a>
-            <a href="#services">O nas</a>
-            <a class="dropBtn-one" href="#clients">Karate <i class="fa-solid fa-chevron-down"></i></a>
-            <div class="dropdown-container-one">
-                <a href="./karate.html">Historia</a>
-                <a href="./karate.html">Pasy</a>
-                <a href="./karate.html">Wymagania Egzaminacyjne</a>
-            </div>
-            <a class='dropBtn-two' href="#contact">Klub <i class="fa-solid fa-chevron-down"></i></a>
-            <div class="dropdown-container-two">
-                <a href="./klub.html">Grupy Treningowe</a>
-                <a href="./klub.html">Historia Klubu</a>
-                <a href="./klub.html">Instruktorzy</a>
-                <a href="./klub.html">Nasz Klub</a>
-                <a href="./klub.html">Regulamin i cennik</a>
-                <a href="./klub.html">Stopnie mistrzowskie</a>
-            </div>
-            <a href="#">Oferta</a>
-            <a href="./kontakt.html">Kontakt</a>
-        </div>
+        
 
     </nav>
 
     <main>
-        
-            <div class="hbg">
-                <button class="hamburger hamburger--spin" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </div>
-        <header class="headers animate__animated animate__fadeInLeft ">
+
+        <header class="headers">
             <img src="./img/zdj sala nowe.jpg" alt="klub" class='mainPct'>
             <div class="shadow"></div>
-            <div class="header-box">
+            <div class="header-box animate__animated animate__fadeInLeft">
                 <img src="./img/logo.png" alt="logo">
                 <h1>Ełcki klub karate <br> <span>shinkyokushin</span></h1>
                 <button class="butt"><a href="#"></a>POZNAJ NAS</button>
@@ -121,7 +122,11 @@
                         <img src="./img/Team.jpg" alt="Trenerzy" class="about-us__img">
                     </div>
                     <div class="about-us__box-text">
-                        <p class="about-us__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio neque, dolorem doloremque autem eligendi distinctio tempore nesciunt voluptate quam accusamus nisi rerum, a architecto veritatis ipsam ducimus. Sapiente minus eius placeat exercitationem velit quod similique rerum hic. Cupiditate adipisci soluta, nobis suscipit autem aliquid sed vitae eaque dignissimos. Labore, porro!   <span><a href="">Czytaj dalej.</a></span> </p>
+                        <p class="about-us__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio neque,
+                            dolorem doloremque autem eligendi distinctio tempore nesciunt voluptate quam accusamus nisi
+                            rerum, a architecto veritatis ipsam ducimus. Sapiente minus eius placeat exercitationem
+                            velit quod similique rerum hic. Cupiditate adipisci soluta, nobis suscipit autem aliquid sed
+                            vitae eaque dignissimos. Labore, porro! <span><a href="">Czytaj dalej.</a></span> </p>
                     </div>
 
 
@@ -160,7 +165,9 @@
 
                         <div class="train-us__box-text">
                             <h3 class="train-us__title">Nowoczesny Klub</h3>
-                            <p class="train-us__text">Nowoczesna klimatyzowana sala treningowa umożliwia zróżnicowane treningi dopasowane do indywidualnych celów. Wysokiej jakości sprzęt sprzyja wygodzie i bezpieczeństwu podczas ćwiczeń, a estetyczny design tworzy motywujące otoczenie.  </p>
+                            <p class="train-us__text">Nowoczesna klimatyzowana sala treningowa umożliwia zróżnicowane
+                                treningi dopasowane do indywidualnych celów. Wysokiej jakości sprzęt sprzyja wygodzie i
+                                bezpieczeństwu podczas ćwiczeń, a estetyczny design tworzy motywujące otoczenie. </p>
                         </div>.
                     </div>
 
@@ -169,7 +176,12 @@
 
                         <div class="train-us__box-text">
                             <h3 class="train-us__title">Wykwalifikowana Kadra</h3>
-                            <p class="train-us__text">Wykwalifikowana kadra to niezwykle istotny element każdej dziedziny, zapewniający wysoki poziom profesjonalizmu i kompetencji. Wykwalifikowana kadra jest w stanie dostosować plany treningowe do indywidualnych potrzeb i umiejętności każdej osoby, co przekłada się na lepsze rezultaty. Ponadto, profesjonalni instruktorzy potrafią motywować i inspirować swoich podopiecznych, tworząc pozytywną atmosferę sprzyjającą regularnym treningom.</p>
+                            <p class="train-us__text">Wykwalifikowana kadra to niezwykle istotny element każdej
+                                dziedziny, zapewniający wysoki poziom profesjonalizmu i kompetencji. Wykwalifikowana
+                                kadra jest w stanie dostosować plany treningowe do indywidualnych potrzeb i umiejętności
+                                każdej osoby, co przekłada się na lepsze rezultaty. Ponadto, profesjonalni instruktorzy
+                                potrafią motywować i inspirować swoich podopiecznych, tworząc pozytywną atmosferę
+                                sprzyjającą regularnym treningom.</p>
                         </div>.
                         <div class="train-us__box-img">
                             <img src="./img/kadra.jpg" alt="Klub" class="train-us__img">
@@ -193,7 +205,12 @@
 
                         <div class="train-us__box-text">
                             <h3 class="train-us__title">Pasja</h3>
-                            <p class="train-us__text">Pasja do karate to głębokie zaangażowanie, które prowadzi do ciągłego doskonalenia swoich umiejętności i poznawania filozofii tej sztuki walki. Pasjonaci karate wyznają zasady szacunku, samoograniczenia i ducha sportowej rywalizacji, które wpływają na ich codzienne życie. Ta pasja może przynieść głęboką satysfakcję, rozwijając nie tylko umiejętności fizyczne, ale także charakter, cierpliwość i wytrwałość.</p>
+                            <p class="train-us__text">Pasja do karate to głębokie zaangażowanie, które prowadzi do
+                                ciągłego doskonalenia swoich umiejętności i poznawania filozofii tej sztuki walki.
+                                Pasjonaci karate wyznają zasady szacunku, samoograniczenia i ducha sportowej
+                                rywalizacji, które wpływają na ich codzienne życie. Ta pasja może przynieść głęboką
+                                satysfakcję, rozwijając nie tylko umiejętności fizyczne, ale także charakter,
+                                cierpliwość i wytrwałość.</p>
                         </div>.
                         <div class="train-us__box-img">
                             <img src="./img/pasja.jpg" alt="Klub" class="train-us__img">
@@ -202,7 +219,7 @@
                 </div>
 
             </div>
-            </section>
+        </section>
     </main>
 
     <script src="./script.js"></script>

@@ -15,55 +15,6 @@ html {
   width: 100%;
 }
 
-.header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 10rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  background-color: #ddd;
-}
-
-.header-left {
-  margin-left: 0.6em;
-  font-size: 1.8rem;
-}
-.header-left a,
-.header-left i,
-.header-left p {
-  display: inline-block;
-  margin: 0.1em;
-}
-.header-left .fbIcon {
-  font-size: 2rem;
-}
-.header-left .phoneIcon {
-  font-size: 1.8rem;
-}
-
-.header-middle img {
-  height: 8rem;
-  width: 8rem;
-  margin: 1em;
-}
-
-.header-right {
-  margin-right: 2rem;
-  z-index: 11;
-}
-
-.btn-join {
-  border-radius: 6px;
-  background: none;
-  background-color: #3776c9;
-  cursor: pointer;
-  box-shadow: 5px 2px 2px #3776c9;
-  padding: 5px 8px;
-  font-size: 1rem;
-  display: none;
-}
-
 .desktop-nav {
   position: fixed;
   width: 100%;
@@ -181,8 +132,9 @@ html {
 }
 .hamburger-nav {
   position: absolute;
+  z-index: 10;
   top: 0;
-  left: 0px;
+  left: 0;
   right: 0;
   bottom: 0;
   padding-top: 50px;
@@ -193,7 +145,6 @@ html {
   background-color: #ddd;
   transform: translateX(100%);
   transition: transform 0.3s;
-  z-index: 50;
 }
 
 .dropdown-container-one,
@@ -244,12 +195,11 @@ i {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  z-index: 0;
 }
 
 .headers {
   position: relative;
-  z-index: 4;
+  z-index: 0;
 }
 
 .shadow {
@@ -262,11 +212,10 @@ i {
 }
 
 .hbg {
-  z-index: 100;
   position: absolute;
-  position: fixed;
-  top: 20px;
+  top: 10px;
   right: 25px;
+  z-index: 30;
 }
 
 .header-box {
@@ -437,43 +386,11 @@ i {
   .menu {
     display: flex;
   }
-  .header {
-    height: 13rem;
-  }
-  .header-left {
-    margin-left: 0.5em;
-    font-size: 2.5rem;
-  }
-  .header-left a,
-  .header-left i,
-  .header-left p {
-    display: inline-block;
-    margin: 0.06em;
-  }
-  .header-left .fbIcon {
-    font-size: 3rem;
-  }
-  .header-left .phoneIcon {
-    font-size: 2.8rem;
-  }
-  .header-middle img {
-    height: 12rem;
-    width: 12rem;
-    margin: 1em;
-  }
-  .header-right {
-    margin-right: 4rem;
-  }
-  .btn-join {
-    padding: 12px 13px;
-    font-size: 1.5rem;
-    display: flex;
-  }
   .section-heading {
     font-size: 3rem;
   }
   .section-padding {
-    padding: 6em 0em;
+    padding: 6em 2em;
   }
   .about-us__box {
     flex-direction: row;
@@ -527,38 +444,6 @@ i {
   .hamburger-nav {
     display: none;
   }
-  .header {
-    height: 16rem;
-  }
-  .header-left {
-    margin-left: 1em;
-    font-size: 3rem;
-  }
-  .header-left a,
-  .header-left i,
-  .header-left p {
-    display: inline-block;
-    margin: 0.1em;
-  }
-  .header-left .fbIcon {
-    font-size: 3.5rem;
-  }
-  .header-left .phoneIcon {
-    font-size: 3rem;
-  }
-  .btn-join {
-    padding: 10px 20px;
-    font-size: 2.2rem;
-    display: flex;
-  }
-  .header-middle img {
-    height: 14rem;
-    width: 14rem;
-    margin: 1em;
-  }
-  .header-right {
-    margin-right: 7rem;
-  }
   .section-heading {
     font-size: 3.6rem;
   }
@@ -600,38 +485,6 @@ i {
     padding: 15px 25px;
     font-size: 10rem;
     letter-spacing: 2px;
-  }
-  .header {
-    height: 18rem;
-  }
-  .header-left {
-    margin-left: 1em;
-    font-size: 3.5rem;
-  }
-  .header-left a,
-  .header-left i,
-  .header-left p {
-    display: inline-block;
-    margin: 0.1em;
-  }
-  .header-left .fbIcon {
-    font-size: 4rem;
-  }
-  .header-left .phoneIcon {
-    font-size: 3.5rem;
-  }
-  .btn-join {
-    padding: 20px 30px;
-    font-size: 2.5rem;
-    display: flex;
-  }
-  .header-middle img {
-    height: 16rem;
-    width: 16rem;
-    margin: 1em;
-  }
-  .header-right {
-    margin-right: 7rem;
   }
   .section-heading {
     font-size: 4.8rem;
@@ -715,16 +568,5 @@ i {
   }
   .train-us__box {
     height: 40em;
-  }
-  .header-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */

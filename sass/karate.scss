@@ -1,3 +1,36 @@
+// nav{
+//     position: relative;
+// }
+
+.navbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    .navBarLogo{
+        height: 50px;
+        margin: 10px;
+        // width: 40px;
+    }
+    .navBarTitle{
+        display: inline-block;
+        color: #fff;
+        font-size: 2.5rem;
+        margin-left: 10px;
+        
+    }
+}
+.tittleMargin{
+    margin-top: 40px;
+}
+
+
 
 .fas {
 	margin-right: 20px;
@@ -46,9 +79,7 @@
     padding: 1em 2em;
 }
 
-// .active{
-//     display: flex;
-//     }
+
 .orange{
     background-color: #f7a01f;
 }
@@ -121,6 +152,7 @@
 
 @media (min-width: 576px) {
     .history-text-container{
+        padding: 1em 3em;
         p{
             font-size: 1.5rem;
         }
@@ -137,7 +169,11 @@
 }
 
 @media (min-width: 768px) {
+    .navbox{
+        display: none;
+    }
     .history-text-container{
+        padding: 1em 6em;
         p{
             font-size: 2rem;
         }

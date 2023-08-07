@@ -1,13 +1,38 @@
+.navbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 70px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.navbox .navBarLogo {
+  height: 50px;
+  margin: 10px;
+}
+.navbox .navBarTitle {
+  display: inline-block;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-left: 10px;
+}
+
+.tittleMargin {
+  margin-top: 40px;
+}
+
 .desktop-nav {
-  position: relative;
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   height: 70px;
   line-height: 70px;
-  padding: 0 10px;
-  z-index: 0;
-  display: flex;
+  padding: 0 100px;
+  z-index: 5;
+  display: block;
 }
 
 .brand {
@@ -15,7 +40,7 @@
 }
 .brand a {
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 22px;
   color: #fff;
   text-transform: uppercase;
   float: left;
@@ -25,12 +50,11 @@
   margin-top: 10px;
   width: 70px;
   height: 50px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .menu {
   float: right;
-  display: none;
 }
 
 .desktop-nav ul li {
@@ -117,10 +141,25 @@
 }
 .hbg {
   position: absolute;
-  position: fixed;
   top: 10px;
-  right: 10px;
-  z-index: 100;
+  right: 20px;
+}
+
+.hamburger-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 50px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ddd;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  z-index: 500;
 }
 
 .contact__box {
@@ -174,6 +213,9 @@ iframe {
   }
 }
 @media (min-width: 768px) {
+  .navbox {
+    display: none;
+  }
   .menu {
     float: right;
     display: flex;
