@@ -70,7 +70,7 @@
 		bottom: 10px;
 		right: 20px;
 		h3 {
-			font-size: 2rem;
+			font-size: 1.5rem;
 			color: white;
 		}
 	}
@@ -85,14 +85,23 @@
 	// width: 100%;
 
 	.patryk {
-		background-image: url("../img/IMG_3356.jpg");
+		background-image: url("../img/Patryk.jpg");
 	}
 	.iga {
 		background-image: url("../img/iga.jpg");
 	}
 	.magda {
 		background-image: url("../img/magda.jpg");
-		background-position: top !important;
+		
+	}
+	.remigiusz{
+		background-image: url("../img/remigiusz.jpg");
+	}
+	.krzysiek{
+		background-image: url("../img/krzysiek.jpg");
+	}
+	.marcin{
+		background-image: url("../img/marcin.jpg");
 	}
 	.card {
 		position: relative;

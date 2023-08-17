@@ -59,7 +59,7 @@
   right: 20px;
 }
 .group-box .title-group h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -68,14 +68,22 @@
   flex-direction: column;
 }
 .cards .patryk {
-  background-image: url("../img/IMG_3356.jpg");
+  background-image: url("../img/Patryk.jpg");
 }
 .cards .iga {
   background-image: url("../img/iga.jpg");
 }
 .cards .magda {
   background-image: url("../img/magda.jpg");
-  background-position: top !important;
+}
+.cards .remigiusz {
+  background-image: url("../img/remigiusz.jpg");
+}
+.cards .krzysiek {
+  background-image: url("../img/krzysiek.jpg");
+}
+.cards .marcin {
+  background-image: url("../img/marcin.jpg");
 }
 .cards .card {
   position: relative;

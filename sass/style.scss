@@ -652,7 +652,7 @@ i {
 //////////////////////////////////////////////////////////
 /// NEWS
 /// ///////////////////////////////////////////////////
-.cards {
+.cards-news {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -661,7 +661,7 @@ i {
 	height: 1300px;
 	// border: 1px solid black;
 
-	.card {
+	.card-news {
 		display: flex;
 		flex-direction: column;
 		// justify-content: space-between;
@@ -910,7 +910,7 @@ i {
 	///////////////////////////////
 	/// CARD
 	///////////////////////////////////////
-	.cards {
+	.cards-news {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -920,7 +920,7 @@ i {
 		height: 100%;
 		// // border: 1px solid black;
 
-		.card {
+		.card-news {
 			height: 500px;
 			width: 400px;
 			margin: 20px;
@@ -1069,7 +1069,7 @@ i {
 		margin-top: 15px;
 		font-size: 2.2rem;
 	}
-	.cards {
+	.cards-news {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -1170,8 +1170,8 @@ i {
 		margin-top: 15px;
 		font-size: 2.3rem;
 	}
-	.cards {
-		.card {
+	.cards-news {
+		.card-news {
 			height: 580px;
 			width: 370px;
 			margin: 20px;
@@ -1273,8 +1273,8 @@ i {
 		margin-top: 25px;
 		font-size: 2.4rem;
 	}
-	.cards {
-		.card {
+	.cards-news {
+		.card-news {
 			height: 700px;
 			width: 350px;
 			margin: 20px;
@@ -1344,9 +1344,9 @@ i {
 	.train-us__box {
 		height: 44em;
 	}
-	.cards {
+	.cards-news {
 		height: 100%;
-		.card {
+		.card-news {
 			height: 700px;
 			width: 360px;
 			margin: 20px;
