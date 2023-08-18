@@ -1,4 +1,8 @@
 // Mobile nav menu
+document.addEventListener('DOMContentLoaded', function(){
+
+
+
 const dropdownOne = document.querySelector(".dropdown-container-one");
 const dropdownTwo = document.querySelector(".dropdown-container-two");
 const dropBtnOne = document.querySelector(".dropBtn-one");
@@ -14,6 +18,12 @@ const accordionBtns = document.querySelectorAll(".accordion-btn");
 // MOBILE NAV
 const hamburgerNav = document.querySelector(".hamburger-nav");
 const navBtn = document.querySelector(".hamburger");
+
+//button poznaj nas
+const buttonMeetUs = document.querySelector('.butt')
+const buttonAboutUs = document.querySelector('.buttonAboutUs')
+const buttonNews = document.querySelector('.buttonNews')
+
 
 
 // FOOTER YEAR STRONA GRID
@@ -62,8 +72,19 @@ const clickOutsideAccordion = e => {
 		// }
 		// btn.addEventListener('click', addToBtn );
 		
+		const scrollMeetUs = () => {
+			window.scrollTo(0,850);
+		}
+		const scrollNews = () => {
+			window.scrollTo(0,5870);
+		}
+
+
+		buttonMeetUs.addEventListener('click', scrollMeetUs);
+		buttonAboutUs.addEventListener('click', scrollMeetUs);
+		buttonNews.addEventListener('click', scrollNews);
 		
-		
+
 		accordionBtns.forEach(btn => btn.addEventListener("click", openAccordionItems));
 		
 		dropBtnOne.addEventListener("click", added);
@@ -72,3 +93,4 @@ const clickOutsideAccordion = e => {
 		window.addEventListener("click", clickOutsideAccordion);
 
 		navBtn.addEventListener("click", handleNav);
+	})
