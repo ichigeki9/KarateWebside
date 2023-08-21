@@ -104,6 +104,9 @@
     height: 100%;
     width: 20px;
     
+    &__red{
+        background-color: red;
+    }
     &__blue{
         background-color: blue;
     }
@@ -119,6 +122,20 @@
     &__black{
         background-color: black;
     }
+}
+.two{
+    position: absolute;
+    top: 0;
+    right: 90px;
+    height: 100%;
+    width: 20px;
+}
+.three{
+    position: absolute;
+    top: 0;
+    right: 130px;
+    height: 100%;
+    width: 20px;
 }
 
 .history-text-container{

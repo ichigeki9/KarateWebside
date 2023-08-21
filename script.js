@@ -1,5 +1,5 @@
 // Mobile nav menu
-document.addEventListener('DOMContentLoaded', function(){
+// document.addEventListener('DOMContentLoaded', function(){
 
 
 
@@ -13,6 +13,7 @@ const dropBtnTwo = document.querySelector(".dropBtn-two");
 
 const accordion = document.querySelector(".accordion");
 const accordionBtns = document.querySelectorAll(".accordion-btn");
+const accordionPagon = document.querySelectorAll(".pagon");
 
 
 // MOBILE NAV
@@ -80,12 +81,14 @@ const clickOutsideAccordion = e => {
 		}
 
 
-		buttonMeetUs.addEventListener('click', scrollMeetUs);
-		buttonAboutUs.addEventListener('click', scrollMeetUs);
-		buttonNews.addEventListener('click', scrollNews);
 		
-
+		// buttonMeetUs.addEventListener('click', scrollMeetUs);
+		// buttonAboutUs.addEventListener('click', scrollMeetUs);
+		// buttonNews.addEventListener('click', scrollNews);
+		
 		accordionBtns.forEach(btn => btn.addEventListener("click", openAccordionItems));
+		accordionPagon.forEach(btn => btn.addEventListener("click", openAccordionItems));
+
 		
 		dropBtnOne.addEventListener("click", added);
 		dropBtnTwo.addEventListener("click", addedd);
@@ -93,4 +96,4 @@ const clickOutsideAccordion = e => {
 		window.addEventListener("click", clickOutsideAccordion);
 
 		navBtn.addEventListener("click", handleNav);
-	})
+	// })

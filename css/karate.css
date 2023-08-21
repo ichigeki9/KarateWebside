@@ -98,6 +98,9 @@
   height: 100%;
   width: 20px;
 }
+.pagon__red {
+  background-color: red;
+}
 .pagon__blue {
   background-color: blue;
 }
@@ -112,6 +115,22 @@
 }
 .pagon__black {
   background-color: black;
+}
+
+.two {
+  position: absolute;
+  top: 0;
+  right: 90px;
+  height: 100%;
+  width: 20px;
+}
+
+.three {
+  position: absolute;
+  top: 0;
+  right: 130px;
+  height: 100%;
+  width: 20px;
 }
 
 .history-text-container {
