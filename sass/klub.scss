@@ -79,7 +79,7 @@
 //////////////////
 /// INSTRUKTORZY KARTY
 /// //////////////
-.cards {
+.intructor-cards {
 	display: flex;
 	flex-direction: column;
 	// width: 100%;
@@ -127,7 +127,7 @@
 			cursor: crosshair;
 			z-index: 10;
 		}
-		.text {
+		.instructor-text {
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
@@ -136,7 +136,7 @@
 			bottom: 0;
 			right: 0;
 			left: 0;
-			padding: 80px 30px;
+			padding: 40px 20px;
 			background-color: rgba(0, 0, 0, 0.85);
 			color: #fff;
 			clip-path: circle(0% at 50% 90%);
@@ -148,15 +148,15 @@
 			font-size: 3rem;
 		}
 		h4 {
-			margin-bottom: 30px;
+			margin-bottom: 40px;
 			font-size: 2rem;
 			color: rgb(141, 138, 138);
 		}
 		p {
-			font-size: 2rem;
+			font-size: 1.6rem;
 		}
 
-		button:hover ~ .text {
+		button:hover ~ .instructor-text {
 			clip-path: circle(120% at 50% 90%);
 		}
 	}
@@ -178,7 +178,7 @@
 			}
 		}
 	}
-	.cards {
+	.intructor-cards {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -200,7 +200,7 @@
 				cursor: crosshair;
 				z-index: 10;
 			}
-			.text {
+			.instructor-text {
 				display: flex;
 				flex-direction: column;
 				justify-content: flex-start;
@@ -250,7 +250,7 @@
 		display: none;
 	}
 
-	.cards {
+	.intructor-cards {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -274,7 +274,7 @@
 				cursor: crosshair;
 				z-index: 10;
 			}
-			.text {
+			.instructor-text {
 				display: flex;
 				flex-direction: column;
 				justify-content: flex-start;
@@ -319,7 +319,7 @@
 		}
 	}
 	
-	.cards {
+	.intructor-cards {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -343,7 +343,7 @@
 				cursor: crosshair;
 				z-index: 10;
 			}
-			.text {
+			.instructor-text {
 				display: flex;
 				flex-direction: column;
 				justify-content: flex-start;
@@ -388,7 +388,7 @@
 		}
 	}
 
-	.cards {
+	.intructor-cards {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -403,7 +403,7 @@
 	}
 }
 @media (min-width: 1400px) {
-	.cards {
+	.intructor-cards {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;

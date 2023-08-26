@@ -56,12 +56,14 @@
   cursor: pointer;
 }
 
-.accordion-btn:hover, .accordion-btn:focus {
+.accordion-btn:hover,
+.accordion-btn:focus {
   color: #fff;
   outline: none;
 }
 
-.accordion-btn:hover .fas, .accordion-btn:focus {
+.accordion-btn:hover .fas,
+.accordion-btn:focus {
   color: #fff;
   outline: none;
 }
@@ -69,6 +71,10 @@
 .accordion-info {
   display: none;
   padding: 1em 2em;
+  font-size: 20px;
+}
+.accordion-info .accordion-info-text {
+  line-height: 40px;
 }
 
 .orange {
@@ -88,15 +94,15 @@
 }
 
 .brown {
-  background-color: #964B00;
+  background-color: #964b00;
 }
 
 .pagon {
   position: absolute;
   top: 0;
-  right: 50px;
+  right: 20px;
   height: 100%;
-  width: 20px;
+  width: 15px;
 }
 .pagon__red {
   background-color: red;
@@ -111,7 +117,7 @@
   background-color: green;
 }
 .pagon__brown {
-  background-color: #964B00;
+  background-color: #964b00;
 }
 .pagon__black {
   background-color: black;
@@ -120,17 +126,17 @@
 .two {
   position: absolute;
   top: 0;
-  right: 90px;
+  right: 50px;
   height: 100%;
-  width: 20px;
+  width: 15px;
 }
 
 .three {
   position: absolute;
   top: 0;
-  right: 130px;
+  right: 80px;
   height: 100%;
-  width: 20px;
+  width: 15px;
 }
 
 .history-text-container {
@@ -138,11 +144,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  line-height: 35px;
 }
 .history-text-container p {
-  margin-bottom: 0.5em;
+  margin-bottom: 2em;
   text-align: justify;
   font-size: 1.2rem;
+}
+.history-text-container span {
+  font-weight: 400;
 }
 
 .history-text-box {
@@ -156,6 +166,20 @@
   margin-top: 20px;
   margin-left: 25px;
   margin-bottom: 20px;
+}
+
+.kyoku-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 1000px;
+}
+.kyoku-img img {
+  background-position: center;
+  background-size: cover;
+  width: 600%;
+  height: 60%;
 }
 
 @media (min-width: 576px) {
@@ -173,6 +197,18 @@
   }
   .history {
     padding: 6em 4em;
+  }
+  .pagon {
+    right: 40px;
+    width: 20px;
+  }
+  .two {
+    right: 80px;
+    width: 20px;
+  }
+  .three {
+    right: 120px;
+    width: 20px;
   }
 }
 @media (min-width: 768px) {

@@ -41,6 +41,15 @@ const addedd = () => {
 	dropdownTwo.classList.toggle("visible");
 };
 
+
+// SPRAWDZANIE NA CO KLUKNALES
+// document.addEventListener('click', (e) => {
+// 	console.log(e.target.parentElement.nextElementSibling);
+	
+// });
+
+
+
 // accordion menu Function
 function openAccordionItems() {
 	
@@ -87,7 +96,9 @@ const clickOutsideAccordion = e => {
 		// buttonNews.addEventListener('click', scrollNews);
 		
 		accordionBtns.forEach(btn => btn.addEventListener("click", openAccordionItems));
-		accordionPagon.forEach(btn => btn.addEventListener("click", openAccordionItems));
+
+		// accordionPagon.forEach(btn => btn.addEventListener("click", openAccordionItems));
+
 
 		
 		dropBtnOne.addEventListener("click", added);
