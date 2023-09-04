@@ -570,8 +570,6 @@ i {
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
-	
-	
 }
 
 .circle-img {
@@ -735,6 +733,16 @@ i {
 		p {
 			font-size: 0.8rem;
 		}
+		a {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			color: black;
+			transition: color 0.5s;
+		}
+		a:hover{
+			color:#3166ff;
+		}
 	}
 
 	.footer-link-box {
@@ -792,7 +800,6 @@ i {
 	font-size: 1.2rem;
 }
 
-
 @media (min-width: 576px) {
 	//HHEEEEEEDDDDDEERRRRRRR
 	.header-box {
@@ -811,12 +818,12 @@ i {
 		font-size: 5rem;
 		color: white;
 		font-weight: bold;
-		
+
 		span {
 			letter-spacing: 5px;
 		}
 	}
-	
+
 	/////////////////////////////
 	.nav {
 		display: flex;
@@ -831,7 +838,7 @@ i {
 	.section-padding {
 		padding: 6em 2em;
 	}
-	
+
 	.about-us {
 		&__box {
 			flex-direction: row;
@@ -850,13 +857,13 @@ i {
 			min-height: 200px;
 		}
 	}
-	
+
 	.menu-item {
 		// padding: 10px 20px;
 		font-size: 1.5rem;
 		letter-spacing: 1.5px;
 	}
-	
+
 	//--------------------------------
 	.train-us__boxes {
 		width: 90%;
@@ -870,7 +877,7 @@ i {
 		height: 55%;
 		width: 100%;
 	}
-	
+
 	.train-us__title {
 		font-size: 2.5rem;
 		margin: 1em 1em 0 1em;
@@ -879,13 +886,13 @@ i {
 		font-size: 1.7rem;
 		margin: 1em 2em 2em 2em;
 	}
-	
+
 	.circle-box {
 		margin: 20px;
 		height: 190px;
 		width: 160px;
 	}
-	
+
 	.circle-img {
 		border: 1px solid rgba(0, 0, 0, 0.4);
 		height: 150px;
@@ -895,7 +902,7 @@ i {
 		margin-top: 15px;
 		font-size: 2rem;
 	}
-	
+
 	///////////////////////////////
 	/// CARD
 	///////////////////////////////////////
@@ -908,13 +915,13 @@ i {
 		// width: 100%;
 		height: 100%;
 		// // border: 1px solid black;
-		
+
 		.card-news {
 			height: 500px;
 			width: 400px;
 			margin: 20px;
 			margin-bottom: 30px;
-			
+
 			.card-text {
 				width: 100%;
 				height: 100%;
@@ -946,9 +953,9 @@ i {
 			width: 110px;
 		}
 	}
-	
+
 	//
-	
+
 	////////////////
 	/// FOOTER
 	/// //////////////
@@ -962,7 +969,7 @@ i {
 				font-size: 1rem;
 			}
 		}
-		
+
 		.footer-link-box {
 			h4 {
 				font-size: 1.5rem;
@@ -1004,7 +1011,7 @@ i {
 	.hamburger-nav {
 		display: none;
 	}
-	
+
 	.section-heading {
 		font-size: 3.6rem;
 	}
@@ -1016,7 +1023,7 @@ i {
 		font-size: 0.9em;
 		// text-align: justify;
 	}
-	
+
 	.menu-item {
 		font-size: 1.9rem;
 	}
@@ -1053,13 +1060,13 @@ i {
 	.train-us__box {
 		height: 30em;
 	}
-	
+
 	.circle-box {
 		margin: 20px;
 		height: 220px;
 		width: 180px;
 	}
-	
+
 	.circle-img {
 		height: 200px;
 		width: 180px;
@@ -1084,30 +1091,26 @@ i {
 			width: 140px;
 		}
 	}
-	
+
 	.footer-menu {
 		.footer-contact {
 			height: 220px;
 			h4 {
-				
 				font-size: 2.2rem;
 			}
 		}
 		.footer-contact-info {
-			
 			i {
-				
 				font-size: 2.5rem;
 			}
 			p {
 				font-size: 1.5rem;
 			}
 		}
-		
+
 		.footer-link-box {
 			height: 230px;
 			h4 {
-				
 				font-size: 2.2rem;
 			}
 			a {
@@ -1116,7 +1119,7 @@ i {
 			}
 		}
 	}
-	
+
 	.footer-info {
 		font-size: 1.6rem;
 	}
@@ -1138,7 +1141,7 @@ i {
 		font-size: 10rem;
 		letter-spacing: 2px;
 	}
-	
+
 	.section-heading {
 		font-size: 4.8rem;
 	}
@@ -1151,7 +1154,7 @@ i {
 	.menu-item {
 		font-size: 2.2rem;
 	}
-	
+
 	.about-us__text {
 		font-size: 2.3rem;
 	}
@@ -1169,18 +1172,18 @@ i {
 	.hamburger {
 		display: none;
 	}
-	
+
 	.circle-box {
 		margin: 20px;
 		height: 250px;
 		width: 180px;
 	}
-	
+
 	.circle-img {
 		height: 200px;
 		width: 180px;
 	}
-	
+
 	.circle-text {
 		margin-top: 15px;
 		font-size: 2.3rem;
@@ -1215,7 +1218,7 @@ i {
 				}
 			}
 		}
-		
+
 		.footer-img {
 			img {
 				width: 85%;
@@ -1240,7 +1243,6 @@ i {
 		}
 		.footer-contact-info {
 			i {
-				
 				font-size: 3rem;
 			}
 			p {
@@ -1249,22 +1251,20 @@ i {
 		}
 		.footer-link-box {
 			height: 290px;
-			
+
 			h4 {
-				
 				font-size: 2.5rem;
 			}
 			a {
-				
 				font-size: 2rem;
 			}
 		}
 	}
-	
+
 	.footer-info {
 		font-size: 1.8rem;
 	}
-	
+
 	.footer-img img {
 		width: 80%;
 		height: 100%;
@@ -1297,7 +1297,7 @@ i {
 			// text-align: justify;
 		}
 	}
-	
+
 	.train-us__title {
 		font-size: 3.5rem;
 		margin: 1em 1em 0 1em;
@@ -1309,7 +1309,7 @@ i {
 	.train-us__box {
 		height: 44em;
 	}
-	
+
 	.circle-box {
 		// border: 1px solid black;
 		margin: 25px;
@@ -1331,7 +1331,7 @@ i {
 			width: 350px;
 			margin: 20px;
 			margin-bottom: 30px;
-			
+
 			.card-text {
 				width: 100%;
 				height: 80%;
@@ -1363,18 +1363,16 @@ i {
 			width: 180px;
 		}
 	}
-	
+
 	.footer-menu {
 		.footer-contact {
 			height: 350px;
-			
+
 			h4 {
 				font-size: 3rem;
-				
 			}
 		}
 		.footer-contact-info {
-			
 			i {
 				margin-right: 20px;
 				font-size: 4rem;
@@ -1393,7 +1391,7 @@ i {
 			}
 		}
 	}
-	
+
 	.footer-info {
 		height: 60px;
 		font-size: 2.2rem;
@@ -1410,7 +1408,7 @@ i {
 	.about-us__text {
 		font-size: 2.7rem;
 	}
-	
+
 	.train-us__box {
 		height: 44em;
 	}
@@ -1421,7 +1419,7 @@ i {
 			width: 360px;
 			margin: 20px;
 			margin-bottom: 30px;
-			
+
 			.card-text {
 				width: 100%;
 				height: 80%;
@@ -1478,9 +1476,9 @@ i {
 			}
 		}
 	}
-	
+
 	.footer-img img {
-		width: 65%;
+		width: 58%;
 		height: 100%;
 		padding: 20px;
 	}

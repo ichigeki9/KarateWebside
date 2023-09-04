@@ -534,6 +534,16 @@ i {
 .footer-menu .footer-contact-info p {
   font-size: 0.8rem;
 }
+.footer-menu .footer-contact-info a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s;
+}
+.footer-menu .footer-contact-info a:hover {
+  color: #3166ff;
+}
 .footer-menu .footer-link-box {
   order: 3;
   width: 30%;
@@ -1151,7 +1161,7 @@ i {
     font-size: 2rem;
   }
   .footer-img img {
-    width: 65%;
+    width: 58%;
     height: 100%;
     padding: 20px;
   }
