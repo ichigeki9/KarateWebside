@@ -91,11 +91,15 @@
 
 .accordion-info {
 	display: none;
-	padding: 1em 2em;
+	padding: 1em 0em;
 	font-size: 20px;
+	width: 100%;
+	// border: 1px solid black;
 
 	.accordion-info-text {
-		line-height: 40px;
+		line-height: 30px;
+		font-size: 15px;
+		width: 100%;
 	}
 }
 
@@ -165,44 +169,69 @@
 
 	p {
 		margin-bottom: 2em;
-		text-align: justify;
+		// text-align: justify;
 		font-size: 1.2rem;
 	}
 	span {
 		font-weight: 400;
 	}
 }
-.history-text-box {
+.bodhidarma,
+.funakoshi,
+.oyama {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	text-align: justify;
+	// text-align: center;
 	// padding: 10px 10px;
 	// margin: 30px;
 
+	// border: 1px solid black;
+}
+.bodhidarma-img,
+.funakoshi-img,
+.oyama-img,
+.kyoku-img,
+.kanku-img,
+.shin-img,
+.kankuShin-img {
+	width: 100%;
+	// height: 40%;
+	// height: 10px;
+	// margin-top: 20px;
+	// margin-left: 25px;
+	// margin-bottom: 20px;
 	img {
-		height: 150px;
-		margin-top: 20px;
-		margin-left: 25px;
-		margin-bottom: 20px;
+		width: 100%;
+		height: 100%;
 	}
 }
 
-.kyoku-img {
-	// border: 2px solid black;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 400px;
-	width: 1000px;
-
-	img {
-		background-position: center;
-		background-size: cover;
-		width: 600%;
-		height: 60%;
-	}
+.funakoshi {
+	margin-bottom: 30px;
 }
+
+// .funakoshi-img{
+// 		width: 100px;
+// 		height: 100px;
+// 	}
+
+// .kyoku-img {
+// 	// border: 2px solid black;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	height: 400px;
+// 	width: 1000px;
+
+// 	img {
+// 		background-position: center;
+// 		background-size: cover;
+// 		width: 600%;
+// 		height: 60%;
+// 	}
+// }
 
 @media (min-width: 576px) {
 	.history-text-container {
@@ -210,29 +239,68 @@
 		p {
 			font-size: 1.5rem;
 		}
-		img {
-			height: 220px;
-			margin-top: 20px;
-			margin-left: 25px;
-			margin-bottom: 20px;
-		}
 	}
+	// .bodhidarma, .funakoshi, .oyama {
+	// 	display: flex;
+	// 	// flex-direction: row;
+	// 	justify-content: space-between;
+	// 	align-items: center;
+	// 	text-align: center;
+	// 	// padding: 10px 10px;
+	// 	// margin: 30px;
+
+	// 	border: 1px solid black;
+
+	// 	.oyama-text, .funakoshi-text, .bodhidarma-text{
+	// 	border: 1px solid blue;
+	// 	width: 80%;
+	// 	}
+	// }
+	.bodhidarma-img,
+	.funakoshi-img,
+	.oyama-img,
+	.kyoku-img,
+	.kanku-img,
+	.shin-img,
+	.kankuShin-img {
+		width: 70%;
+		// height: 80%;
+		// height: 10px;
+		margin-top: 20px;
+		margin-left: 25px;
+		margin-bottom: 20px;
+	}
+	// img{
+	// 	width: 50%;
+	// 	height: 100%;
+	// }
+	// }
+
 	.history {
 		padding: 6em 4em;
 	}
 
 	.pagon {
-		right:40px ;
+		right: 40px;
 		width: 20px;
 	}
 	.two {
-		right: 80px; 
+		right: 80px;
 		width: 20px;
 	}
 	.three {
 		right: 120px;
 		width: 20px;
 	}
+
+	.accordion-info {
+	padding: 1em 0.5em;
+
+	.accordion-info-text {
+		line-height: 40px;
+		font-size: 20px;
+	}
+}
 }
 
 @media (min-width: 768px) {
@@ -244,12 +312,48 @@
 		p {
 			font-size: 2rem;
 		}
-		img {
-			height: 300px;
-			margin-top: 20px;
-			margin-left: 25px;
-			margin-bottom: 20px;
-		}
+		// img {
+		// 	height: 300px;
+		// 	margin-top: 20px;
+		// 	margin-left: 25px;
+		// 	margin-bottom: 20px;
+		// }
+	}
+
+	// .bodhidarma, .funakoshi, .oyama {
+	// 		width: 100%;
+	// 		display: flex;
+	// 		flex-direction: row;
+	// 		justify-content: space-between;
+	// 		align-items: center;
+	// 		// text-align: center;
+	// 		// padding: 10px 10px;
+	// 		// margin: 30px;
+
+	// 		// border: 1px solid black;
+
+	// 		.oyama-text, .funakoshi-text, .bodhidarma-text{
+	// 		// border: 1px solid blue;
+	// 		display: flex;
+	// 		flex-direction: column;
+	// 		width: 100%;
+	// 		}
+
+	// 	}
+
+	.bodhidarma-img,
+	.funakoshi-img,
+	.oyama-img,
+	.kyoku-img,
+	.kanku-img,
+	.shin-img,
+	.kankuShin-img {
+		width: 60%;
+		// height: 80%;
+		// height: 10px;
+		margin-top: 20px;
+		margin-left: 25px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -258,19 +362,92 @@
 		p {
 			font-size: 2.3rem;
 		}
-		img {
-			height: 320px;
-			margin-top: 20px;
-			margin-left: 25px;
-			margin-bottom: 20px;
-		}
+		// img {
+		// 	height: 460px;
+		// 	// width: 300px;
+		// 	margin-top: 20px;
+		// 	margin-left: 25px;
+		// 	margin-bottom: 20px;
+		// }
 	}
 	.history {
 		padding: 6em 6em;
 	}
+
+	.bodhidarma,
+	.funakoshi {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		// text-align: center;
+		// padding: 10px 10px;
+		// margin: 30px;
+
+		// border: 1px solid black;
+
+		.oyama-text,
+		.funakoshi-text,
+		.bodhidarma-text {
+			// border: 1px solid blue;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+	}
+
+	.bodhidarma-img,
+	.funakoshi-img,
+	.kyoku-img,
+	.kanku-img,
+	.shin-img,
+	.kankuShin-img {
+		width: 60%;
+		// height: 80%;
+		// height: 10px;
+		margin-top: 20px;
+		margin-left: 25px;
+		margin-bottom: 20px;
+	}
+
+	.funakoshi-img {
+		width: 55%;
+	}
+
+	.oyama-img{
+		width: 50%;
+	}
+	.accordion-info {
+		padding: 1em 2em;
+	
+		.accordion-info-text {
+			line-height: 45px;
+			font-size: 25px;
+		}
+	}
+
 }
 
 @media (min-width: 1200px) {
+	.history-text-container {
+		p {
+			font-size: 2.5rem;
+		}
+	}
+	.oyama {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.oyama-img {
+		width: 40%;
+	}
+	.oyama-text{
+		width:60%;
+	}
 }
 @media (min-width: 1400px) {
 }

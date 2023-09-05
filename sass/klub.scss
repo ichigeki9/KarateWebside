@@ -125,7 +125,7 @@
 			font-size: 36px;
 			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 			cursor: crosshair;
-			z-index: 10;
+			z-index: 4;
 		}
 		.instructor-text {
 			display: flex;
@@ -187,19 +187,7 @@
 			margin: 20px;
 			height: 500px;
 			width: 70%;
-			button {
-				position: absolute;
-				top: 10px;
-				right: 10px;
-				padding: 10px;
-				background: none;
-				border: none;
-				color: #fff;
-				font-size: 36px;
-				text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-				cursor: crosshair;
-				z-index: 10;
-			}
+		
 			.instructor-text {
 				display: flex;
 				flex-direction: column;
@@ -261,19 +249,7 @@
 			margin: 20px;
 			height: 550px;
 			width: 44%;
-			button {
-				position: absolute;
-				top: 10px;
-				right: 10px;
-				padding: 10px;
-				background: none;
-				border: none;
-				color: #fff;
-				font-size: 36px;
-				text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-				cursor: crosshair;
-				z-index: 10;
-			}
+			
 			.instructor-text {
 				display: flex;
 				flex-direction: column;
@@ -330,19 +306,7 @@
 			margin: 20px;
 			height: 550px;
 			width: 45%;
-			button {
-				position: absolute;
-				top: 10px;
-				right: 10px;
-				padding: 10px;
-				background: none;
-				border: none;
-				color: #fff;
-				font-size: 36px;
-				text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-				cursor: crosshair;
-				z-index: 10;
-			}
+		
 			.instructor-text {
 				display: flex;
 				flex-direction: column;
