@@ -151,10 +151,11 @@
 }
 .history-text-container p {
   margin-bottom: 2em;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 .history-text-container span {
   font-weight: 400;
+  font-size: 2rem;
 }
 
 .bodhidarma,
@@ -174,6 +175,7 @@
 .shin-img,
 .kankuShin-img {
   width: 100%;
+  margin-bottom: 20px;
 }
 .bodhidarma-img img,
 .funakoshi-img img,
