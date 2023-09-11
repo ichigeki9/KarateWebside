@@ -154,6 +154,7 @@
   font-size: 1.8rem;
 }
 .history-text-container span {
+  margin-top: 20px;
   font-weight: 400;
   font-size: 2rem;
 }

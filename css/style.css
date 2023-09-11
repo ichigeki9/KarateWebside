@@ -21,7 +21,8 @@ h6 {
 
 p,
 a,
-button {
+button,
+li {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
@@ -155,6 +156,7 @@ button {
   right: 0;
   bottom: 0;
   padding-top: 50px;
+  display: none;
   display: flex;
   width: 100%;
   align-items: center;
@@ -266,15 +268,15 @@ i {
   background-color: #fff;
 }
 .header-box img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 .header-box h1 {
   letter-spacing: 3px;
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: white;
   font-weight: bold;
 }
@@ -341,7 +343,7 @@ i {
   border-left: 1px solid black;
   border-right: 1px solid black;
   width: 90%;
-  height: 400px;
+  height: 450px;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 30px;
@@ -356,6 +358,7 @@ i {
 
 .train-us__img {
   width: 100%;
+  height: 100%;
   background-position: center;
   background-size: cover;
 }
@@ -365,6 +368,7 @@ i {
   flex-direction: column;
   height: 100%;
   width: 100%;
+  line-height: 16px;
   background-color: #eee;
 }
 
@@ -592,25 +596,68 @@ i {
   font-size: 1.2rem;
 }
 
-@media (min-width: 576px) {
+@media (max-height: 621px) and (max-width: 768px) {
   .header-box {
     bottom: 10px;
   }
+  .header-box .butt {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 2rem;
+  }
   .header-box img {
-    max-width: 250px;
-    max-height: 250px;
+    width: 130px;
+    height: 130px;
+  }
+  .header-box h1 {
+    margin-top: 30px;
+    font-size: 2.5rem;
+  }
+  .header-box h1 span {
+    letter-spacing: 5px;
+  }
+}
+@media (max-height: 500px) and (min-width: 768px) {
+  .header-box {
+    bottom: 10px;
+  }
+  .header-box .butt {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 2rem;
+    font-family: "Agency FB", sans-serif;
+    letter-spacing: 2px;
+  }
+  .header-box img {
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
   }
   .header-box h1 {
     letter-spacing: 4px;
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 2.5rem;
     color: white;
     font-weight: bold;
   }
   .header-box h1 span {
     letter-spacing: 5px;
+  }
+}
+@media (min-width: 576px) and (min-height: 500px) {
+  .header-box h1 {
+    font-size: 4rem;
+  }
+  .header-box img {
+    width: 190px;
+    height: 190px;
+  }
+}
+@media (min-width: 576px) {
+  .header-box {
+    bottom: 10px;
   }
   .nav {
     display: flex;
@@ -661,6 +708,7 @@ i {
   .train-us__text {
     font-size: 1.7rem;
     margin: 1em 2em 2em 2em;
+    line-height: 22px;
   }
   .circle-box {
     margin: 20px;
@@ -684,7 +732,7 @@ i {
     height: 100%;
   }
   .cards-news .card-news {
-    height: 500px;
+    height: 580px;
     width: 400px;
     margin: 20px;
     margin-bottom: 30px;
@@ -779,7 +827,7 @@ i {
   }
   .train-us__box {
     flex-direction: row;
-    height: 20rem;
+    height: 36em;
   }
   .train-us__box-img {
     height: 100%;
@@ -800,9 +848,6 @@ i {
   .train-us__text {
     font-size: 1.4rem;
     margin: 1em 2em 2em 2em;
-  }
-  .train-us__box {
-    height: 30em;
   }
   .circle-box {
     margin: 20px;
@@ -867,6 +912,9 @@ i {
   .desktop-nav ul li a {
     font-size: 1.7rem;
   }
+  .header-box h1 {
+    font-size: 5rem;
+  }
   .butt {
     margin-top: 50px;
     padding: 15px 25px;
@@ -891,6 +939,7 @@ i {
   .train-us__title {
     font-size: 2.8em;
     margin: 1em 1em 0 1em;
+    line-height: 30px;
   }
   .train-us__text {
     font-size: 1.6rem;
@@ -1012,9 +1061,10 @@ i {
   .train-us__text {
     font-size: 2.1rem;
     margin: 1em 2em 2em 2em;
+    line-height: 30px;
   }
   .train-us__box {
-    height: 44em;
+    height: 49em;
   }
   .circle-box {
     margin: 25px;
@@ -1092,8 +1142,12 @@ i {
 }
 @media (min-width: 1400px) {
   .header-box img {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
+  }
+  .header-box h1 {
+    font-size: 5rem;
+    margin-top: 60px;
   }
   .btn-join {
     display: flex;
@@ -1102,7 +1156,7 @@ i {
     font-size: 2.7rem;
   }
   .train-us__box {
-    height: 44em;
+    height: 47em;
   }
   .cards-news {
     height: 100%;

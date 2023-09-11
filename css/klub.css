@@ -24,6 +24,75 @@
   margin-top: 40px;
 }
 
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.gallery-container img {
+  width: 85%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.popup {
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-backdrop-filter: blur 1px;
+          backdrop-filter: blur 1px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.popup img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.cross {
+  padding: 3px 10px;
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  font-size: 4.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.arrow_right,
+.arrow_left {
+  position: fixed;
+  top: 50%;
+  font-size: 5rem;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.arrow_right {
+  right: 5%;
+}
+
+.arrow_left {
+  left: 5%;
+}
+
+.arrow_right:hover,
+.arrow_left:hover,
+.cross:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 .group-boxes {
   margin: 0 auto;
   display: flex;
@@ -83,7 +152,7 @@
   background-image: url("../img/krzysiek.jpg");
 }
 .intructor-cards .marcin {
-  background-image: url("../img/marcin.jpg");
+  background-image: url("../img/Marcin.jpg");
 }
 .intructor-cards .card {
   position: relative;
@@ -146,6 +215,42 @@
           clip-path: circle(120% at 50% 90%);
 }
 
+.rules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 25px;
+  font-size: 1.5rem;
+}
+.rules h3 {
+  font-size: 1.8rem;
+  margin: 40px 0;
+}
+.rules .nonDotted {
+  list-style: none;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+}
+.links a {
+  font-size: 20px;
+  margin: 10px;
+  padding: 3px;
+  text-decoration: none;
+  color: #3166ff;
+  transition: color 0.3s;
+}
+.links a:hover {
+  color: #0d2670;
+}
+.links i {
+  margin-right: 5px;
+}
+
 @media (min-width: 576px) {
   .group-box {
     height: 240px;
@@ -194,6 +299,27 @@
   }
   .intructor-cards .card .instructor-text p {
     font-size: 2rem;
+  }
+  .rules {
+    line-height: 25px;
+    font-size: 1.7rem;
+  }
+  .rules h3 {
+    font-size: 2.1rem;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .links a {
+    font-size: 22px;
+  }
+  .links i {
+    margin-right: 7px;
+  }
+  .gallery-container img {
+    width: 80%;
+    margin: 10px;
   }
 }
 @media (min-width: 768px) {
@@ -248,6 +374,20 @@
   .intructor-cards .card .instructor-text p {
     font-size: 2rem;
   }
+  .rules {
+    line-height: 30px;
+    font-size: 2rem;
+  }
+  .rules h3 {
+    font-size: 2.4rem;
+  }
+  .links a {
+    font-size: 22px;
+  }
+  .gallery-container img {
+    width: 40%;
+    margin: 10px;
+  }
 }
 @media (min-width: 992px) {
   .group-box {
@@ -297,6 +437,17 @@
   .intructor-cards .card .instructor-text p {
     font-size: 2.2rem;
   }
+  .rules {
+    line-height: 35px;
+    font-size: 2.2rem;
+  }
+  .rules h3 {
+    font-size: 2.6rem;
+  }
+  .gallery-container img {
+    width: 30%;
+    margin: 10px;
+  }
 }
 @media (min-width: 1200px) {
   .group-box {
@@ -321,6 +472,17 @@
     margin: 20px;
     height: 620px;
     width: 29%;
+  }
+  .rules {
+    line-height: 40px;
+    font-size: 2.4rem;
+  }
+  .rules h3 {
+    font-size: 2.8rem;
+  }
+  .links a {
+    font-size: 3rem;
+    margin: 20px;
   }
 }
 @media (min-width: 1400px) {

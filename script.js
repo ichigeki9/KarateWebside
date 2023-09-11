@@ -20,10 +20,7 @@ const accordionPagon = document.querySelectorAll(".pagon");
 const hamburgerNav = document.querySelector(".hamburger-nav");
 const navBtn = document.querySelector(".hamburger");
 
-//button poznaj nas
-const buttonMeetUs = document.querySelector('.butt')
-const buttonAboutUs = document.querySelector('.buttonAboutUs')
-const buttonNews = document.querySelector('.buttonNews')
+
 
 
 
@@ -82,12 +79,7 @@ const clickOutsideAccordion = e => {
 		// }
 		// btn.addEventListener('click', addToBtn );
 		
-		const scrollMeetUs = () => {
-			window.scrollTo(0,850);
-		}
-		const scrollNews = () => {
-			window.scrollTo(0,5870);
-		}
+		
 
 
 		
