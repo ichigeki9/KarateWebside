@@ -320,6 +320,7 @@
   .gallery-container img {
     width: 80%;
     margin: 10px;
+    border-radius: 5px;
   }
 }
 @media (min-width: 768px) {

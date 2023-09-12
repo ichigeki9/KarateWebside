@@ -347,6 +347,7 @@
 		img {
 			width: 80%;
 			margin: 10px;
+			border-radius: 5px;
 		}
 	}
 }
@@ -570,11 +571,11 @@
 	// 		max-height: 80%;
 	// 	}
 	// }
-	
+
 	// .popup.hidden {
 	// 	display: none;
 	// }
-	
+
 	// .cross {
 	// 	padding: 3px 10px;
 	// 	position: fixed;
@@ -599,15 +600,12 @@
 	// .arrow_left {
 	// 	left: 3em;
 	// }
-	
+
 	// .arrow_right:hover,
 	// .arrow_left:hover,
 	// .cross:hover {
 	// 	background-color: rgba(255, 255, 255, 0.4);
 	// }
-
-
-
 }
 @media (min-width: 1400px) {
 	.intructor-cards {
