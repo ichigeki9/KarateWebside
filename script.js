@@ -23,13 +23,31 @@ const navBtn = document.querySelector(".hamburger");
 
 
 
-
+const setVisibleNav = () => {
+	hamburgerNav.classList.add("active");
+}
+const setUnvisibleNav = () => {
+	hamburgerNav.classList.remove("active");
+}
 // FOOTER YEAR STRONA GRID
 
-const handleNav = () => {
-	navBtn.classList.toggle("is-active");
-	hamburgerNav.classList.toggle("nav-mobile--active");
+const openNav = () => {
+	setVisibleNav()
+	setTimeout(() => {
+		navBtn.classList.add("is-active");
+		hamburgerNav.classList.add("nav-mobile--active");
+	}, 50);
 };
+
+const closeNav = () => {
+	navBtn.classList.remove("is-active");
+	hamburgerNav.classList.remove("nav-mobile--active");
+	setTimeout(() => {
+		setUnvisibleNav()
+	}, 200);
+};
+
+
 
 const added = () => {
 	dropdownOne.classList.toggle("visible");
@@ -98,5 +116,18 @@ const clickOutsideAccordion = e => {
 		
 		window.addEventListener("click", clickOutsideAccordion);
 
-		navBtn.addEventListener("click", handleNav);
+		navBtn.addEventListener("click", () => {
+			let dupa = hamburgerNav.classList
+			console.log(dupa);
+			
+			if(dupa.contains('active')){
+				closeNav()
+			}else{
+				openNav()
+			}
+
+
+
+		} ); // otwarcie navigacji hbg
+		// navBtn.addEventListener("click", closeNav); // zamknięcie navigacji hbg
 	// })

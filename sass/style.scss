@@ -261,7 +261,7 @@ li {
 	bottom: 0;
 	padding-top: 50px;
 	display: none;
-	display: flex;
+	// display: flex;
 	width: 100%;
 	// justify-content: center;
 	align-items: center;
@@ -274,6 +274,7 @@ li {
 	// display: none;
 	// height: 100vh;
 	// width: 100%;
+	
 }
 
 .dropdown-container-one,
@@ -314,7 +315,6 @@ i {
 }
 
 .nav-mobile--active {
-	// display: block;
 	transform: translateX(0%);
 }
 
