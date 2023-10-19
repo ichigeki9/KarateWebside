@@ -1,6 +1,6 @@
 //button poznaj nas
 const buttonAboutUs = document.querySelector(".butt");
-const buttonNews = document.querySelector(".buttonNews");
+// const buttonNews = document.querySelector(".buttonNews");
 
 // console.log(buttonNews);
 
@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	};
 
 	buttonAboutUs.addEventListener("click", scrollMeetUs);
-	buttonNews.addEventListener("click", scrollNews);
+	// buttonNews.addEventListener("click", scrollNews);
 });
